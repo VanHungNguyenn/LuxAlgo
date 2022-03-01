@@ -126,7 +126,8 @@ body {
 
 .banner {
   background-color: #0c0c0c;
-  min-height: 100vh;
+  height: 70vh;
+  overflow: hidden;
   padding-top: 7rem;
 }
 .banner__container {
