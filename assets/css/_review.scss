@@ -1,0 +1,14 @@
+.review {
+	padding-top: 5rem;
+	padding-bottom: 10rem;
+	color: $black-color;
+
+	&__title {
+		width: 70rem;
+		font-size: 6.1rem;
+		color: $green-color;
+		font-weight: 700;
+		margin: 0 auto;
+		text-align: center;
+	}
+}

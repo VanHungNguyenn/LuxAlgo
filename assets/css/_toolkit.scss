@@ -1,0 +1,31 @@
+.toolkit {
+	padding-top: 18rem;
+	padding-bottom: 10rem;
+	background-color: #f4f4f4;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__image {
+		width: 50%;
+		position: relative;
+
+		&-item1 {
+			position: relative;
+			right: 0rem;
+			width: 50rem;
+			z-index: 2;
+		}
+
+		&-item2 {
+			position: absolute;
+			top: -8rem;
+			right: 5rem;
+			width: 50rem;
+			z-index: 1;
+		}
+	}
+}

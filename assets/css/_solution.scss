@@ -1,0 +1,13 @@
+.solution {
+	margin-bottom: 14rem;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__image {
+		width: 50%;
+	}
+}

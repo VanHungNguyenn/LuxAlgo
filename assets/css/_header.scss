@@ -1,0 +1,46 @@
+.header {
+	height: 66px;
+	background-color: $primary-color;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+	}
+
+	&__logo {
+		width: 10rem;
+	}
+
+	&__menu {
+		&-list {
+			display: flex;
+			align-items: center;
+		}
+
+		&-item {
+			margin: 1rem 2rem;
+			font-size: 1.4rem;
+		}
+
+		&-link {
+			color: $white-color;
+			font-weight: 600;
+
+			&:hover {
+				opacity: 0.6;
+			}
+		}
+	}
+
+	&__button {
+		padding: 1rem 2rem;
+		border: 1px solid;
+		border-radius: 0.8rem;
+	}
+
+	&__language i {
+		font-size: 2rem;
+	}
+}

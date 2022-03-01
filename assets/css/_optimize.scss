@@ -1,0 +1,44 @@
+.optimize {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	background-color: $black-color;
+	overflow-y: hidden;
+	height: 60rem;
+
+	&__container {
+		color: $white-color;
+		display: flex;
+		align-items: flex-start;
+	}
+
+	&__image {
+		width: 50%;
+		position: relative;
+
+		&-item1 {
+			position: relative;
+			left: 5rem;
+			top: 12rem;
+			width: 40rem;
+			z-index: 2;
+			transition: top 0.3s ease-in-out;
+
+			&:hover {
+				top: -3rem;
+			}
+		}
+
+		&-item2 {
+			position: absolute;
+			left: 20rem;
+			top: 5rem;
+			width: 40rem;
+			z-index: 1;
+			transition: top 0.3s ease-in-out;
+
+			&:hover {
+				top: -10rem;
+			}
+		}
+	}
+}
