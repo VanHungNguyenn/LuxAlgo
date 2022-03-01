@@ -32,10 +32,12 @@ body {
 	color: $white-color;
 }
 
-// 1340px
+// 1340px + 20px + 20px
 .wrapper {
-	max-width: 1340px;
+	max-width: 1370px;
 	margin: 0 auto;
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
 
 // 1216px + 20px + 20px

@@ -28,8 +28,10 @@ body {
 }
 
 .wrapper {
-  max-width: 1340px;
+  max-width: 1370px;
   margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .container {
