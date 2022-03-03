@@ -1,0 +1,170 @@
+.pricing {
+	padding-top: 8rem;
+	padding-bottom: 10rem;
+	background-color: $black-color;
+
+	&__intro {
+		text-align: center;
+	}
+
+	&__subtitle {
+		font-size: 2.4rem;
+		font-weight: 400;
+		margin-bottom: 3rem;
+		text-transform: uppercase;
+	}
+
+	&__title {
+		font-size: 6rem;
+		margin-bottom: 1rem;
+		font-weight: 700;
+		line-height: 1;
+	}
+
+	&__desc {
+		font-size: 1.8rem;
+		margin-bottom: 5rem;
+		width: 33rem;
+		margin: 0 auto 5rem;
+	}
+
+	&__heading {
+		font-size: 1.6rem;
+		font-weight: 700;
+		margin-bottom: 2rem;
+	}
+
+	&__button {
+		margin-bottom: 4rem;
+	}
+
+	&__package {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: 5rem;
+
+		&-item {
+			width: calc(33.33% - 2.66rem);
+			background-color: #162135;
+
+			border-radius: 1rem;
+			box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+			text-align: center;
+		}
+
+		&-title {
+			text-transform: uppercase;
+			background-color: #535aee;
+			font-size: 1.8rem;
+			padding: 1rem 0;
+			overflow: hidden;
+			border-top-left-radius: 1rem;
+			border-top-right-radius: 1rem;
+		}
+	}
+
+	&__content {
+		padding: 2rem 1rem;
+	}
+
+	&__newprice {
+		font-size: 4.8rem;
+		font-weight: bold;
+	}
+
+	&__price {
+		font-size: 2.4rem;
+		font-weight: bold;
+		color: #ffffff63;
+		text-decoration: line-through;
+	}
+
+	&__saving {
+		font-size: 2.4rem;
+		font-weight: bold;
+		color: #888888;
+		margin-bottom: 1rem;
+
+		&-green {
+			color: $green-color;
+		}
+	}
+
+	&__button-item {
+		margin-bottom: 5rem;
+	}
+
+	&__expired {
+		font-size: 1.4rem;
+
+		&-border {
+			padding: 0.4rem 2rem;
+			border-radius: 0.5rem;
+			width: fit-content;
+			margin: 0 auto;
+			background-color: hsla(0, 0%, 100%, 0.21);
+			cursor: pointer;
+			transition: all 0.2s ease-in-out;
+
+			&:hover {
+				background-color: rgb(18, 18, 192);
+			}
+		}
+	}
+
+	&__checkout {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&-left,
+		&-right {
+			width: 50%;
+		}
+
+		&-title {
+			font-size: 4.8rem;
+			font-weight: 700;
+			margin-bottom: 2rem;
+		}
+
+		&-desc {
+			font-size: 1.8rem;
+			margin-bottom: 2rem;
+
+			span {
+				font-weight: bold;
+			}
+		}
+
+		&-block {
+			width: fit-content;
+			margin: 0 auto;
+		}
+
+		&-advantage {
+			font-size: 2rem;
+			padding: 1.5rem 0 1.5rem 0;
+			display: flex;
+			align-items: center;
+
+			i {
+				font-size: 2rem;
+				margin-right: 1rem;
+				color: $green-color;
+			}
+		}
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+
+		&-item {
+			width: 7rem;
+			padding-right: 1rem;
+		}
+	}
+}

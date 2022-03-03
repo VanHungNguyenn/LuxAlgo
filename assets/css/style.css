@@ -22,7 +22,7 @@ a {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   line-height: 1.2;
   color: #fff;
 }
@@ -65,7 +65,7 @@ body {
   color: #0c0c0c;
 }
 .feature__subtitle {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 400;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -73,7 +73,7 @@ body {
 .feature__title {
   font-size: 6rem;
   margin-bottom: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1;
 }
 .feature__title span {
@@ -81,7 +81,7 @@ body {
   color: #535aee;
 }
 .feature__desc {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   margin-bottom: 2rem;
 }
 .feature__desc span {
@@ -114,7 +114,7 @@ body {
 }
 .header__menu-link {
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
 }
 .header__menu-link:hover {
   opacity: 0.6;
@@ -144,12 +144,12 @@ body {
 }
 .banner__title {
   margin: 2rem 0 1.5rem;
-  font-size: 6rem;
+  font-size: 7.2rem;
   font-weight: 700;
   line-height: 1;
 }
 .banner__desc {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   margin-bottom: 2rem;
 }
 .banner__logo {
@@ -179,11 +179,11 @@ body {
 }
 .intro__title {
   font-size: 4.8rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 1.5rem;
 }
 .intro__desc {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
 }
 .intro__desc span {
   font-weight: 700;
@@ -280,6 +280,147 @@ body {
   font-weight: 700;
   margin: 0 auto;
   text-align: center;
+}
+
+.pricing {
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+  background-color: #0c0c0c;
+}
+.pricing__intro {
+  text-align: center;
+}
+.pricing__subtitle {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+.pricing__title {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.pricing__desc {
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+  width: 33rem;
+  margin: 0 auto 5rem;
+}
+.pricing__heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.pricing__button {
+  margin-bottom: 4rem;
+}
+.pricing__package {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+}
+.pricing__package-item {
+  width: calc(33.33% - 2.66rem);
+  background-color: #162135;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.pricing__package-title {
+  text-transform: uppercase;
+  background-color: #535aee;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  overflow: hidden;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.pricing__content {
+  padding: 2rem 1rem;
+}
+.pricing__newprice {
+  font-size: 4.8rem;
+  font-weight: bold;
+}
+.pricing__price {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #ffffff63;
+  text-decoration: line-through;
+}
+.pricing__saving {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #888888;
+  margin-bottom: 1rem;
+}
+.pricing__saving-green {
+  color: #07bf60;
+}
+.pricing__button-item {
+  margin-bottom: 5rem;
+}
+.pricing__expired {
+  font-size: 1.4rem;
+}
+.pricing__expired-border {
+  padding: 0.4rem 2rem;
+  border-radius: 0.5rem;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.21);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.pricing__expired-border:hover {
+  background-color: #1212c0;
+}
+.pricing__checkout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pricing__checkout-left, .pricing__checkout-right {
+  width: 50%;
+}
+.pricing__checkout-title {
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.pricing__checkout-desc {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.pricing__checkout-desc span {
+  font-weight: bold;
+}
+.pricing__checkout-block {
+  width: fit-content;
+  margin: 0 auto;
+}
+.pricing__checkout-advantage {
+  font-size: 2rem;
+  padding: 1.5rem 0 1.5rem 0;
+  display: flex;
+  align-items: center;
+}
+.pricing__checkout-advantage i {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: #07bf60;
+}
+.pricing__logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.pricing__logo-item {
+  width: 7rem;
+  padding-right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
