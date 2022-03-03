@@ -1,6 +1,5 @@
 .review {
 	padding-top: 5rem;
-	padding-bottom: 10rem;
 	color: $black-color;
 
 	&__title {
@@ -10,5 +9,64 @@
 		font-weight: 700;
 		margin: 0 auto;
 		text-align: center;
+		margin-bottom: 2rem;
 	}
+
+	&__slider {
+		width: 89rem;
+		margin: 0 auto;
+	}
+
+	&__box {
+		padding: 2rem;
+		border: 1px solid #ccc;
+		border-radius: 1rem;
+		margin: 0;
+
+		&__title {
+			font-size: 2rem;
+			font-weight: 700;
+			margin-bottom: 1rem;
+		}
+
+		&__desc {
+			font-size: 1.5rem;
+			margin-bottom: 1rem;
+		}
+
+		&__stars {
+			display: flex;
+			align-items: center;
+			margin-bottom: 2rem;
+		}
+
+		&__star {
+			width: 3rem;
+			margin-right: 0.1rem;
+		}
+
+		&__user {
+			display: flex;
+			align-items: center;
+
+			&-img {
+				width: 5rem;
+				height: 5rem;
+				border: 1px solid #ccc;
+				border-radius: 50%;
+				margin-right: 2rem;
+			}
+
+			&-name {
+				font-size: 1.5rem;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 10rem;
 }
