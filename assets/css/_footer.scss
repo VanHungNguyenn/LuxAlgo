@@ -2,4 +2,101 @@
 	background-color: #0c0c0c;
 	padding-top: 6rem;
 	padding-bottom: 4rem;
+
+	&__container {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	&__left,
+	&__right {
+		width: calc(25% - 3rem);
+	}
+
+	&__center {
+		width: calc(50% - 3rem);
+	}
+
+	&__logo {
+		margin-bottom: 2rem;
+	}
+
+	&__resource {
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+		font-weight: 700;
+	}
+
+	&__links {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	&__links1,
+	&__links2 {
+		width: 50%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+
+	&__link,
+	&__email {
+		font-size: 1.6rem;
+		margin-bottom: 1.5rem;
+		color: $white-color;
+		cursor: pointer;
+		font-weight: 300;
+
+		&:hover {
+			opacity: 0.9;
+		}
+	}
+
+	&__socials {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	&__social {
+		margin-right: 1.5rem;
+		font-size: 2.5rem;
+		color: $white-color;
+
+		&:hover {
+			opacity: 0.9;
+		}
+	}
+}
+
+.info {
+	text-align: center;
+	padding-bottom: 1rem;
+	background: #0c0c0c;
+
+	&__copyrights {
+		font-size: 1.5rem;
+
+		font-weight: 400;
+		margin-bottom: 1.5rem;
+	}
+
+	&__writer {
+		font-size: 1.5rem;
+		font-weight: 400;
+
+		a {
+			font-weight: 700;
+			cursor: pointer;
+			color: $primary-color;
+
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+	}
 }

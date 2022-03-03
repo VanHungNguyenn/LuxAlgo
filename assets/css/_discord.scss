@@ -3,13 +3,6 @@
 	padding-bottom: 18rem;
 	background: linear-gradient(to bottom right, #2646b1 0%, #8952e4 94%);
 
-	background: rgb(68, 73, 193);
-	background: linear-gradient(
-		139deg,
-		rgba(68, 73, 193, 1) 0%,
-		rgba(0, 0, 0, 1) 50%,
-		rgba(90, 42, 143, 1) 100%
-	);
 	&__container {
 		text-align: center;
 	}
@@ -43,7 +36,7 @@
 	}
 
 	&__button {
-		background-color: $white-color;
+		background: $white-color;
 		color: $primary-color;
 		padding: 2rem 5rem;
 		border: 1px solid transparent;
