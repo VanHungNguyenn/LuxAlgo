@@ -1,0 +1,57 @@
+.discord {
+	padding-top: 10rem;
+	padding-bottom: 18rem;
+	background: linear-gradient(to bottom right, #2646b1 0%, #8952e4 94%);
+
+	background: rgb(68, 73, 193);
+	background: linear-gradient(
+		139deg,
+		rgba(68, 73, 193, 1) 0%,
+		rgba(0, 0, 0, 1) 50%,
+		rgba(90, 42, 143, 1) 100%
+	);
+	&__container {
+		text-align: center;
+	}
+	&__subtitle {
+		font-size: 3.6rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__logo {
+		width: 40rem;
+		margin: 0 auto 4rem;
+	}
+
+	&__official {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 5rem;
+
+		img {
+			margin-right: 1rem;
+		}
+	}
+
+	&__partner {
+		font-size: 1.8rem;
+		text-transform: uppercase;
+	}
+
+	&__button {
+		background-color: $white-color;
+		color: $primary-color;
+		padding: 2rem 5rem;
+		border: 1px solid transparent;
+
+		&:hover {
+			background-color: transparent;
+			color: $white-color;
+			border: 1px solid;
+		}
+	}
+}

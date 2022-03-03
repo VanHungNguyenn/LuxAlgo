@@ -1,0 +1,78 @@
+.contact {
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+	background-color: #000000;
+
+	&__container {
+		width: 112rem;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__left,
+	&__right {
+		width: calc(50% - 2.5rem);
+	}
+
+	&__title {
+		font-size: 3.2rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	&__desc {
+		font-size: 1.5rem;
+	}
+
+	&__right {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+
+	&__form {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 1.5rem;
+
+		input {
+			flex-grow: 1;
+			padding: 0.9rem 1.2rem;
+			font-size: 1.4rem;
+			background-color: #0c0c0c;
+			border: 1px solid rgb(80, 79, 79);
+			outline: none;
+			border-top-left-radius: 1.5rem;
+			border-bottom-left-radius: 1.5rem;
+			color: $white-color;
+		}
+	}
+
+	&__button {
+		padding: 0.9rem 1.2rem;
+		font-size: 1.4rem;
+		background-color: transparent;
+		border: 1px solid rgb(80, 79, 79);
+		border-top-right-radius: 1.5rem;
+		border-bottom-right-radius: 1.5rem;
+		color: $white-color;
+		cursor: pointer;
+		transition: all 0.2s ease-in-out;
+
+		&:hover {
+			color: $black-color;
+			background-color: $white-color;
+		}
+	}
+
+	&__rule {
+		margin-left: 1rem;
+		font-size: 1.2rem;
+		opacity: 0.6;
+	}
+}

@@ -1,9 +1,16 @@
 .banner {
-	background-color: $black-color;
-	height: 70vh;
+	background: rgb(68, 73, 193);
+	background: linear-gradient(
+		139deg,
+		rgba(68, 73, 193, 1) 0%,
+		rgba(0, 0, 0, 1) 50%,
+		rgba(90, 42, 143, 1) 100%
+	);
+	height: 80vh;
 	overflow: hidden;
+	z-index: 1000;
 
-	padding-top: 7rem;
+	padding-top: 15rem;
 
 	&__container {
 		display: flex;

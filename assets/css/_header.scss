@@ -1,6 +1,14 @@
+.header.black {
+	background-color: #0c0c0c;
+}
+
 .header {
 	height: 66px;
-	background-color: $primary-color;
+	background-color: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 
 	&__container {
 		display: flex;

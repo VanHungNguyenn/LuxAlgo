@@ -1,0 +1,25 @@
+.question {
+	color: $black-color;
+	padding-top: 6rem;
+	padding-bottom: 10rem;
+
+	&__subtitle {
+		font-size: 2.4rem;
+		font-weight: 400;
+		margin-bottom: 1rem;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__title {
+		font-size: 6.4rem;
+		margin-bottom: 1.5rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+
+		span {
+			display: block;
+		}
+	}
+}

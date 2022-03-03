@@ -54,7 +54,15 @@ body {
 	border-radius: 1rem;
 	font-size: 1.5rem;
 	color: $white-color;
-	background-color: $primary-color;
+
+	background: rgb(84, 89, 238);
+	background: linear-gradient(
+		139deg,
+		rgba(84, 89, 238, 1) 0%,
+		rgba(87, 88, 238, 1) 50%,
+		rgba(134, 75, 238, 1) 100%
+	);
+
 	display: inline-block;
 	font-weight: bold;
 	cursor: pointer;
