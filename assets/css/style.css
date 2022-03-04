@@ -637,6 +637,7 @@ body {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 2rem;
+  max-width: 90%;
 }
 .review__slider {
   width: 90rem;
@@ -683,6 +684,7 @@ body {
 }
 
 .swiper {
+  width: 95%;
   margin-bottom: 5rem;
 }
 
@@ -691,6 +693,24 @@ body {
   color: #07bf60;
 }
 
+@media screen and (max-width: 1099px) {
+  .review__title {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* start of large tablet styles */
+}
+@media screen and (max-width: 767px) {
+  .review__title {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 479px) {
+  .review__title {
+    font-size: 3.5rem;
+  }
+}
 .pricing {
   padding-top: 8rem;
   padding-bottom: 10rem;
@@ -832,6 +852,64 @@ body {
   padding-right: 1rem;
 }
 
+@media screen and (max-width: 1099px) {
+  /* start of desktop styles */
+}
+@media screen and (max-width: 991px) {
+  .pricing__subtitle {
+    font-size: 2.1rem;
+  }
+
+  .pricing__title {
+    font-size: 4rem;
+  }
+
+  .pricing__desc {
+    font-size: 1.8rem;
+  }
+
+  .pricing__checkout {
+    flex-direction: column;
+  }
+
+  .pricing__checkout-left {
+    width: 70%;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .pricing__logo {
+    justify-content: center;
+  }
+
+  .pricing__checkout-right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pricing__package {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+  .pricing__package-item {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .pricing__checkout-left {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .pricing__package {
+    padding: 0 1rem;
+  }
+
+  .pricing {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
 .question {
   color: #0c0c0c;
   padding-top: 6rem;

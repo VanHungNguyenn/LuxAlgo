@@ -25,6 +25,17 @@ var swiper = new Swiper('.mySwiper', {
 	autoplay: {
 		delay: 3000,
 	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 20,
+		},
+
+		640: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+	},
 })
 
 // accordion
