@@ -447,10 +447,18 @@ body {
   .solution__image {
     width: 70%;
   }
+
+  .solution {
+    margin-bottom: 10rem;
+  }
 }
 @media screen and (max-width: 767px) {
   .solution__image {
     width: 90%;
+  }
+
+  .solution {
+    margin-bottom: 5rem;
   }
 }
 @media screen and (max-width: 479px) {
@@ -484,6 +492,49 @@ body {
   z-index: 1;
 }
 
+@media screen and (max-width: 1099px) {
+  .toolkit__container {
+    flex-direction: column;
+  }
+
+  .toolkit__image {
+    width: 50%;
+  }
+
+  .toolkit__feature {
+    margin-top: 5rem;
+  }
+
+  .toolkit {
+    padding-top: 15rem;
+    padding-bottom: 8rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .toolkit__image {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .toolkit__image {
+    width: 90%;
+  }
+
+  .toolkit {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .toolkit__image-item2 {
+    display: none;
+  }
+
+  .toolkit {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
 .optimize {
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -504,7 +555,7 @@ body {
   position: relative;
   left: 5rem;
   top: 12rem;
-  width: 40rem;
+  width: 33rem;
   z-index: 1;
   transition: top 0.3s ease-in-out;
 }
@@ -515,7 +566,7 @@ body {
   position: absolute;
   left: 20rem;
   top: 5rem;
-  width: 40rem;
+  width: 33rem;
   z-index: 1;
   transition: top 0.3s ease-in-out;
 }
@@ -523,6 +574,56 @@ body {
   top: -10rem;
 }
 
+@media screen and (max-width: 1099px) {
+  .optimize {
+    height: auto;
+    top: 0;
+    overflow-y: hidden;
+  }
+
+  .optimize__container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -60rem;
+    overflow-y: hidden;
+  }
+
+  .optimize__image {
+    position: static;
+    padding-top: 5rem;
+  }
+
+  .optimize__image-item1 {
+    position: static;
+    width: 70%;
+    z-index: 0;
+    transition: top 0.3s ease-in-out;
+  }
+
+  .optimize__image-item2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .optimize__image {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .optimize__container {
+    margin-bottom: -50rem;
+  }
+}
+@media screen and (max-width: 479px) {
+  .optimize {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .optimize__container {
+    margin-bottom: -30rem;
+  }
+}
 .review {
   padding-top: 5rem;
   color: #0c0c0c;

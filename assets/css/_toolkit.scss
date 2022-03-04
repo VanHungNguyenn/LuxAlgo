@@ -29,3 +29,50 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1099px) {
+	.toolkit__container {
+		flex-direction: column;
+	}
+
+	.toolkit__image {
+		width: 50%;
+	}
+
+	.toolkit__feature {
+		margin-top: 5rem;
+	}
+
+	.toolkit {
+		padding-top: 15rem;
+		padding-bottom: 8rem;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.toolkit__image {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.toolkit__image {
+		width: 90%;
+	}
+
+	.toolkit {
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.toolkit__image-item2 {
+		display: none;
+	}
+
+	.toolkit {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+}

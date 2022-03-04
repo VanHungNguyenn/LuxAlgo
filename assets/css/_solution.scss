@@ -26,11 +26,19 @@
 	.solution__image {
 		width: 70%;
 	}
+
+	.solution {
+		margin-bottom: 10rem;
+	}
 }
 
 @media screen and (max-width: 767px) {
 	.solution__image {
 		width: 90%;
+	}
+
+	.solution {
+		margin-bottom: 5rem;
 	}
 }
 
