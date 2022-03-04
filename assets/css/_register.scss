@@ -1,4 +1,4 @@
-.login {
+.register {
 	padding-top: 16rem;
 	padding-bottom: 10rem;
 	color: $black-color;
@@ -121,6 +121,22 @@
 				opacity: 0.9;
 			}
 		}
+
+		&-policy {
+			font-size: 1.8rem;
+			padding-bottom: 3rem;
+			margin-bottom: 2rem;
+			border-bottom: 1px solid #0c0c0c;
+
+			a {
+				color: $primary-color;
+				text-decoration: underline;
+
+				&:hover {
+					opacity: 0.9;
+				}
+			}
+		}
 	}
 
 	&__footer {
@@ -150,6 +166,20 @@
 	}
 
 	.login__button {
+		width: 100%;
+
+		&:first-child {
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.register__buttons {
+		flex-direction: column;
+	}
+
+	.register__button {
 		width: 100%;
 
 		&:first-child {

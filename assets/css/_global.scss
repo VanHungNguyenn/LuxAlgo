@@ -71,6 +71,26 @@ body {
 		background: $green-color;
 	}
 
+	&--apple {
+		background: rgb(0, 0, 0);
+		background: linear-gradient(
+			139deg,
+			rgba(0, 0, 0, 1) 0%,
+			rgba(0, 0, 0, 1) 50%,
+			rgba(0, 0, 0, 1) 100%
+		);
+	}
+
+	&--facebook {
+		background: rgb(59, 89, 152);
+		background: linear-gradient(
+			139deg,
+			rgba(59, 89, 152, 1) 0%,
+			rgba(59, 89, 152, 1) 50%,
+			rgba(59, 89, 152, 1) 100%
+		);
+	}
+
 	&:hover {
 		opacity: 0.9;
 	}

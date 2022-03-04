@@ -11,6 +11,10 @@
 	right: 0;
 	z-index: 10;
 
+	&__black {
+		background-color: #0c0c0c;
+	}
+
 	&__container {
 		display: flex;
 		align-items: center;
