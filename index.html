@@ -41,8 +41,11 @@
 					<img src="assets/images/logo.svg" alt="Lux Algo" />
 				</a>
 
-				<div class="header__menu">
+				<div class="header__menu" id="header__menu">
 					<ul class="header__menu-list">
+						<a href="index.html" class="header__logo-mobile">
+							<img src="assets/images/logo.svg" alt="Lux Algo" />
+						</a>
 						<li class="header__menu-item">
 							<a href="#" class="header__menu-link">Resources</a>
 						</li>
@@ -78,17 +81,17 @@
 								>Login / Register</a
 							>
 						</li>
-						<li class="header__menu-item">
-							<a
-								href="#"
-								class="header__menu-link header__language"
-							>
-								<i class="fa-solid fa-globe"></i>
-							</a>
-						</li>
 					</ul>
+					<div class="header__close" onclick="hideMenu()">
+						<i class="fas fa-times" ></i>
+					</div>
 				</div>
-			</div>
+				<div class="header__language">
+					<i class="fa-solid fa-globe"></i>
+				</div>
+				<div class="header__bars" onclick="showMenu()">
+					<i class="fas fa-bars" ></i>
+				</div>
 		</header>
 		<section class="banner">
 			<div class="container banner__container">
@@ -212,117 +215,215 @@
 					Trusted by over 35,000+ traders.
 				</div>
 				<!-- Swiper -->
-				<div class="review__slider">
-					<div class="swiper mySwiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide review__box">
-								<div class="review__box__title">
-									“The Honest Truth”
-								</div>
-								<div
-									class="review__box__desc text-clamp text-clamp--3"
-								>
-									I came to Lux Algo to see what the fuss was
-									about; it was recommended to me by my
-									friend. It has lived up to its expectations
-									and reputation. Would I recommend to another
-									friend of mine?
-								</div>
-								<div class="review__box__stars">
-									<img
-										src="assets/images/star-review.svg"
-										alt="star"
-										class="review__box__star"
-									/>
-									<img
-										src="assets/images/star-review.svg"
-										alt="star"
-										class="review__box__star"
-									/>
-									<img
-										src="assets/images/star-review.svg"
-										alt="star"
-										class="review__box__star"
-									/>
-									<img
-										src="assets/images/star-review.svg"
-										alt="star"
-										class="review__box__star"
-									/>
-									<img
-										src="assets/images/star-review.svg"
-										alt="star"
-										class="review__box__star"
-									/>
-								</div>
-								<div class="review__box__user">
-									<img
-										src="assets/images/avatar.png"
-										alt="avatar"
-										class="review__box__user-img"
-									/>
-									<div class="review__box__user-name">
-										Ka Linerva
-									</div>
-								</div>
+				<div class="swiper mySwiper review__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide review__box">
+							<div class="review__box__title">
+								“The Honest Truth”
 							</div>
-
-							<div class="swiper-slide review__box">
-								<div class="review__box__title">
-									“The Honest Truth”
-								</div>
-								<div
-									class="review__box__desc text-clamp text-clamp--3"
-								>
-									I came to Lux Algo to see what the fuss was
-									about; it was recommended to me by my
-									friend. It has lived up to its expectations
-									and reputation. Would I recommend to another
-									friend of mine?
-								</div>
-								<div class="review__box__stars">
-									<img
-										src="assets/images/star-review.svg"
-										alt="star"
-										class="review__box__star"
-									/>
-									<img
-										src="assets/images/star-review.svg"
-										alt="star"
-										class="review__box__star"
-									/>
-									<img
-										src="assets/images/star-review.svg"
-										alt="star"
-										class="review__box__star"
-									/>
-									<img
-										src="assets/images/star-review.svg"
-										alt="star"
-										class="review__box__star"
-									/>
-									<img
-										src="assets/images/star-review.svg"
-										alt="star"
-										class="review__box__star"
-									/>
-								</div>
-								<div class="review__box__user">
-									<img
-										src="assets/images/avatar.png"
-										alt="avatar"
-										class="review__box__user-img"
-									/>
-									<div class="review__box__user-name">
-										Ka Linerva
-									</div>
+							<div
+								class="review__box__desc text-clamp text-clamp--3"
+							>
+								I came to Lux Algo to see what the fuss was
+								about; it was recommended to me by my friend. It
+								has lived up to its expectations and reputation.
+								Would I recommend to another friend of mine?
+							</div>
+							<div class="review__box__stars">
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+							</div>
+							<div class="review__box__user">
+								<img
+									src="assets/images/avatar.png"
+									alt="avatar"
+									class="review__box__user-img"
+								/>
+								<div class="review__box__user-name">
+									Ka Linerva
 								</div>
 							</div>
 						</div>
-						<!-- <div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div> -->
-						<div class="swiper-pagination"></div>
+
+						<div class="swiper-slide review__box">
+							<div class="review__box__title">
+								“The Honest Truth”
+							</div>
+							<div
+								class="review__box__desc text-clamp text-clamp--3"
+							>
+								I came to Lux Algo to see what the fuss was
+								about; it was recommended to me by my friend. It
+								has lived up to its expectations and reputation.
+								Would I recommend to another friend of mine?
+							</div>
+							<div class="review__box__stars">
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+							</div>
+							<div class="review__box__user">
+								<img
+									src="assets/images/avatar.png"
+									alt="avatar"
+									class="review__box__user-img"
+								/>
+								<div class="review__box__user-name">
+									Ka Linerva
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide review__box">
+							<div class="review__box__title">
+								“The Honest Truth”
+							</div>
+							<div
+								class="review__box__desc text-clamp text-clamp--3"
+							>
+								I came to Lux Algo to see what the fuss was
+								about; it was recommended to me by my friend. It
+								has lived up to its expectations and reputation.
+								Would I recommend to another friend of mine?
+							</div>
+							<div class="review__box__stars">
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+							</div>
+							<div class="review__box__user">
+								<img
+									src="assets/images/avatar.png"
+									alt="avatar"
+									class="review__box__user-img"
+								/>
+								<div class="review__box__user-name">
+									Ka Linerva
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide review__box">
+							<div class="review__box__title">
+								“The Honest Truth”
+							</div>
+							<div
+								class="review__box__desc text-clamp text-clamp--3"
+							>
+								I came to Lux Algo to see what the fuss was
+								about; it was recommended to me by my friend. It
+								has lived up to its expectations and reputation.
+								Would I recommend to another friend of mine?
+							</div>
+							<div class="review__box__stars">
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+								<img
+									src="assets/images/star-review.svg"
+									alt="star"
+									class="review__box__star"
+								/>
+							</div>
+							<div class="review__box__user">
+								<img
+									src="assets/images/avatar.png"
+									alt="avatar"
+									class="review__box__user-img"
+								/>
+								<div class="review__box__user-name">
+									Ka Linerva
+								</div>
+							</div>
+						</div>
 					</div>
+					<!-- <div class="swiper-pagination"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div> -->
 				</div>
 			</div>
 		</section>
@@ -456,7 +557,89 @@
 				<div class="question__title">
 					Frequently <span>asked questions.</span>
 				</div>
-				<div class="question__accordion"></div>
+				<div class="question__accordion">
+					<div class="question__accordion-item">
+						<div class="question__accordion-title">
+							How does it work?
+							<i class="fa-solid fa-plus"></i>
+						</div>
+						<div class="question__accordion-content">
+							<p>
+								Once you purchase a plan for our all-inclusive
+								membership, you receive an email with a link to
+								get instant access to our premium suite of 3
+								powerful indicators directly on your TradingView
+								account. It works on the free plan of
+								TradingView, you don't need to upgrade to use
+								the indicators.
+							</p>
+							<p>
+								You also can get access to the VIP section of
+								our Discord server from the link we email you
+								where we provide automated trading signals,
+								optimization, and a full community experience
+								with lifetime updates to the tools you use.
+							</p>
+						</div>
+					</div>
+					<div class="question__accordion-item">
+						<div class="question__accordion-title">
+							What markets can I use it with?
+							<i class="fa-solid fa-plus"></i>
+						</div>
+						<div class="question__accordion-content">
+							<p>
+								Lux Algo works on any market internationally
+								including stocks, indices, forex, futures,
+								currencies and commodities on all timeframes
+								including 1m, 5m, 30m, 1H, 4H, 1D, 1W, etc.
+							</p>
+							<p>
+								You can utilize our toolkits for scalping, swing
+								trading, or even for trading options as well.
+								The tools we provide are fully customizable and
+								can fit any style of discretionary trading.
+							</p>
+						</div>
+					</div>
+					<div class="question__accordion-item">
+						<div class="question__accordion-title">
+							Can I win every trade using this?
+							<i class="fa-solid fa-plus"></i>
+						</div>
+						<div class="question__accordion-content">
+							<p>
+								Absolutely not. There is no magic solution or
+								"algorithm" to give you the power to predict
+								markets with a guaranteed % accuracy.
+							</p>
+							<p>
+								We provide simplified trading toolkits that are
+								designed for discretionary trading, not to be
+								followed blindly. Our tools can help you gain
+								unique perspectives to use on any market
+								available on TradingView.
+							</p>
+						</div>
+					</div>
+					<div class="question__accordion-item">
+						<div class="question__accordion-title">
+							Is this friendly for beginners?
+							<i class="fa-solid fa-plus"></i>
+						</div>
+						<div class="question__accordion-content">
+							<p>
+								Yes, if you're new to trading you can certainly
+								use our tools with ease.
+							</p>
+							<p>
+								We have many easy to follow tutorials & guides
+								for you to use as a beginner and get you started
+								out on the right track.
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section class="discord">

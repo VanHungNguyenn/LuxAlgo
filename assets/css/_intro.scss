@@ -5,6 +5,7 @@
 
 	&__container {
 		max-width: 70rem;
+		width: 90%;
 		margin: 0 auto;
 		text-align: center;
 	}
@@ -21,5 +22,29 @@
 		span {
 			font-weight: 700;
 		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.intro {
+		margin-bottom: 4rem;
+	}
+
+	.intro__title {
+		font-size: 4rem;
+	}
+
+	.intro__desc {
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.intro__title {
+		font-size: 3.5rem;
+	}
+
+	.intro__desc {
+		font-size: 1.5rem;
 	}
 }

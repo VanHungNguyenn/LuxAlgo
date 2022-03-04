@@ -11,3 +11,29 @@
 		width: 50%;
 	}
 }
+
+@media screen and (max-width: 1099px) {
+	.solution__container {
+		flex-direction: column-reverse;
+	}
+
+	.solution__image {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.solution__image {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.solution__image {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	/* start of phone styles */
+}

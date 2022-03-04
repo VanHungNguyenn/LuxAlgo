@@ -9,7 +9,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 1000;
+	z-index: 10;
 
 	&__container {
 		display: flex;
@@ -20,16 +20,22 @@
 
 	&__logo {
 		width: 10rem;
+
+		&-mobile {
+			display: none;
+		}
 	}
 
 	&__menu {
+		margin-left: auto;
+
 		&-list {
 			display: flex;
 			align-items: center;
 		}
 
 		&-item {
-			margin: 1rem 2rem;
+			margin: 1rem 1.6rem;
 			font-size: 1.4rem;
 		}
 
@@ -49,7 +55,89 @@
 		border-radius: 0.8rem;
 	}
 
-	&__language i {
-		font-size: 2rem;
+	&__language {
+		padding: 1rem 1rem;
+		margin: 0 0.6rem;
+		cursor: pointer;
+		border-radius: 0.8rem;
+		font-size: 3rem;
+
+		&:hover {
+			background-color: $primary-color;
+		}
+	}
+
+	&__bars,
+	&__close {
+		display: none;
+		cursor: pointer;
+		font-size: 3rem;
+		padding: 1rem 1rem;
+		margin: 0 0.6rem;
+		border-radius: 0.8rem;
+
+		&:hover {
+			background-color: $primary-color;
+		}
+	}
+}
+
+@media screen and (max-width: 1099px) {
+	.header {
+		&__logo {
+			&-mobile {
+				display: block;
+				cursor: pointer;
+				margin-bottom: 3rem;
+			}
+		}
+
+		&__menu {
+			position: absolute;
+			top: -100vh;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			height: 100vh;
+			background-color: $black-color;
+			z-index: 100;
+			transition: 0.5s;
+
+			&-list {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				margin: auto;
+				height: 100%;
+			}
+
+			&-item {
+				margin-bottom: 3rem;
+				font-size: 1.8rem;
+				font-weight: 700;
+			}
+		}
+
+		&__language {
+			margin-left: auto;
+		}
+
+		&__bars {
+			display: block;
+		}
+
+		&__close {
+			display: inline-block;
+			position: absolute;
+			top: 1rem;
+			right: 2rem;
+		}
+
+		&__button {
+			background-color: $green-color;
+			border: 1px solid transparent;
+			padding: 1rem 5rem;
+		}
 	}
 }

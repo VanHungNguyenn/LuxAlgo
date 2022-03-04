@@ -13,7 +13,7 @@
 
 	&__title {
 		font-size: 6.4rem;
-		margin-bottom: 1.5rem;
+		margin-bottom: 4rem;
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
@@ -21,5 +21,69 @@
 		span {
 			display: block;
 		}
+	}
+
+	&__accordion {
+		width: 94rem;
+		margin: 0 auto;
+		padding-right: 2rem;
+		padding-left: 2rem;
+
+		&-item {
+			border-top: 1px solid #0c0c0c;
+			border-bottom: 1px solid #0c0c0c;
+
+			&:first-child {
+				border-top: 2px solid #0c0c0c;
+			}
+
+			&:last-child {
+				border-bottom: 2px solid #0c0c0c;
+			}
+		}
+
+		&-title {
+			font-size: 1.8rem;
+			font-weight: 700;
+			padding: 2rem 4rem 2rem 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			cursor: pointer;
+
+			i {
+				cursor: pointer;
+			}
+		}
+
+		&-content {
+			padding-bottom: 3rem;
+			padding-right: 4rem;
+			font-size: 1.5rem;
+			font-weight: 400;
+			line-height: 1.8;
+			display: none;
+			opacity: 0;
+			-webkit-animation: smooth 0.3s ease-in;
+			-moz-animation: smooth 0.3s ease-in;
+			-o-animation: smooth 0.3s ease-in;
+			-ms-animation: smooth 0.3s ease-in;
+			animation: smooth 0.3s ease-in;
+
+			p {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}
+
+@keyframes smooth {
+	0% {
+		opacity: 0;
+		display: none;
+	}
+	100% {
+		opacity: 1;
+		display: block;
 	}
 }
