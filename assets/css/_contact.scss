@@ -10,7 +10,8 @@
 	);
 
 	&__container {
-		width: 112rem;
+		max-width: 100rem;
+		width: 100%;
 		margin: 0 auto;
 		display: flex;
 		align-items: center;
@@ -81,4 +82,37 @@
 		font-size: 1.2rem;
 		opacity: 0.6;
 	}
+}
+
+@media screen and (max-width: 1099px) {
+	.contact {
+		&__container {
+			flex-direction: column;
+		}
+
+		&__left,
+		&__right {
+			width: 100%;
+			margin-bottom: 2rem;
+		}
+
+		&__right {
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-start;
+			flex-direction: column;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	/* start of large tablet styles */
+}
+
+@media screen and (max-width: 767px) {
+	/* start of medium tablet styles */
+}
+
+@media screen and (max-width: 479px) {
+	/* start of phone styles */
 }

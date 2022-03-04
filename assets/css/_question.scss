@@ -24,7 +24,8 @@
 	}
 
 	&__accordion {
-		width: 94rem;
+		max-width: 94rem;
+		width: 90%;
 		margin: 0 auto;
 		padding-right: 2rem;
 		padding-left: 2rem;
@@ -85,5 +86,47 @@
 	100% {
 		opacity: 1;
 		display: block;
+	}
+}
+
+@media screen and (max-width: 1099px) {
+	/* start of desktop styles */
+}
+
+@media screen and (max-width: 991px) {
+	.question__subtitle {
+		font-size: 2.1rem;
+	}
+
+	.question__title {
+		font-size: 4.5rem;
+	}
+
+	.question__accordion {
+		width: 100%;
+		padding-right: 0;
+		padding-left: 0;
+
+		&-title {
+			padding: 2rem 0;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.question__accordion {
+		&-title {
+			padding: 2rem 1rem 2rem 0;
+		}
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.question__subtitle {
+		font-size: 1.8rem;
+	}
+
+	.question__title {
+		font-size: 3.5rem;
 	}
 }

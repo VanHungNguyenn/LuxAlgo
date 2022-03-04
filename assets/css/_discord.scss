@@ -48,3 +48,37 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1099px) {
+	/* start of desktop styles */
+}
+
+@media screen and (max-width: 991px) {
+	.discord {
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+
+		&__subtitle {
+			font-size: 2.1rem;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.discord {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+
+		&__logo {
+			width: 70%;
+		}
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.discord {
+		&__subtitle {
+			font-size: 1.8rem;
+		}
+	}
+}

@@ -933,7 +933,8 @@ body {
   display: block;
 }
 .question__accordion {
-  width: 94rem;
+  max-width: 94rem;
+  width: 90%;
   margin: 0 auto;
   padding-right: 2rem;
   padding-left: 2rem;
@@ -988,6 +989,41 @@ body {
     display: block;
   }
 }
+@media screen and (max-width: 1099px) {
+  /* start of desktop styles */
+}
+@media screen and (max-width: 991px) {
+  .question__subtitle {
+    font-size: 2.1rem;
+  }
+
+  .question__title {
+    font-size: 4.5rem;
+  }
+
+  .question__accordion {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .question__accordion-title {
+    padding: 2rem 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .question__accordion-title {
+    padding: 2rem 1rem 2rem 0;
+  }
+}
+@media screen and (max-width: 479px) {
+  .question__subtitle {
+    font-size: 1.8rem;
+  }
+
+  .question__title {
+    font-size: 3.5rem;
+  }
+}
 .discord {
   padding-top: 10rem;
   padding-bottom: 18rem;
@@ -1032,6 +1068,32 @@ body {
   border: 1px solid;
 }
 
+@media screen and (max-width: 1099px) {
+  /* start of desktop styles */
+}
+@media screen and (max-width: 991px) {
+  .discord {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .discord__subtitle {
+    font-size: 2.1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .discord {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .discord__logo {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .discord__subtitle {
+    font-size: 1.8rem;
+  }
+}
 .contact {
   padding-top: 3rem;
   padding-bottom: 2rem;
@@ -1039,7 +1101,8 @@ body {
   background: linear-gradient(90deg, #363a9b 0%, #0d0d0d 35%, #0d0d0d 100%);
 }
 .contact__container {
-  width: 112rem;
+  max-width: 100rem;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -1101,12 +1164,37 @@ body {
   opacity: 0.6;
 }
 
+@media screen and (max-width: 1099px) {
+  .contact__container {
+    flex-direction: column;
+  }
+  .contact__left, .contact__right {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .contact__right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* start of large tablet styles */
+}
+@media screen and (max-width: 767px) {
+  /* start of medium tablet styles */
+}
+@media screen and (max-width: 479px) {
+  /* start of phone styles */
+}
 .footer {
   background-color: #0c0c0c;
   padding-top: 6rem;
   padding-bottom: 4rem;
 }
 .footer__container {
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -1184,6 +1272,49 @@ body {
   opacity: 0.9;
 }
 
+@media screen and (max-width: 1099px) {
+  /* start of desktop styles */
+}
+@media screen and (max-width: 991px) {
+  .footer__left, .footer__right {
+    width: calc(25% - 0.5rem);
+  }
+  .footer__center {
+    width: calc(50% - 0.5rem);
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__container {
+    flex-direction: column;
+  }
+  .footer__left, .footer__right {
+    width: 100%;
+  }
+  .footer__left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .footer__right {
+    text-align: center;
+  }
+  .footer__socials {
+    justify-content: center;
+  }
+  .footer__center {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .footer__links {
+    justify-content: space-evenly;
+  }
+  .footer__links1, .footer__links2 {
+    width: fit-content;
+  }
+}
 @media screen and (max-width: 1099px) {
   /* start of desktop styles */
 }
