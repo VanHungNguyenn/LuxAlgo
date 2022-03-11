@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lux Algo | Advanced TradingView Tools + Bots</title>
+		<!-- import Roboto font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- import font-awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- Link Swiper's CSS -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<link rel="stylesheet" href="assets/css/reset.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<div class="page__layout">
+			<div class="sidebar">
+				<div class="sidebar__logo">
+					<a href="#">
+						<img src="assets/images/logo_3commas.svg" alt="logo" />
+					</a>
+				</div>
+				<ul class="sidebar__links">
+					<li class="sidebar__link">
+						<a href="#">
+							<i class="fa-solid fa-home"></i>
+							<div>Dashboard</div>
+						</a>
+					</li>
+					<li class="sidebar__link sidebar__active">
+						<a href="#">
+							<i class="fab fa-battle-net"></i>
+							<div>My Exchanges</div>
+						</a>
+					</li>
+					<li class="sidebar__link">
+						<a href="#">
+							<i class="fa-solid fa-user-group"></i>
+							<div>Invite Friends</div>
+						</a>
+					</li>
+					<li class="sidebar__link">
+						<a href="#">
+							<i class="fa-solid fa-wallet"></i>
+							<div>Subscription</div>
+							<span>Sale</span>
+						</a>
+					</li>
+				</ul>
+				<div class="sidebar__footer">
+					<div class="sidebar__socials">
+						<div class="sidebar__socials-content">
+							Come join us:
+						</div>
+						<div class="sidebar__socials-list">
+							<a href="#" class="sidebar__social">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+							<a href="#" class="sidebar__social">
+								<i class="fa-brands fa-facebook-f"></i>
+							</a>
+							<a href="#" class="sidebar__social">
+								<i class="fa-brands fa-youtube"></i>
+							</a>
+							<a href="#" class="sidebar__social">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+
+							<a href="#" class="sidebar__social">
+								<i class="fa-brands fa-discord"></i>
+							</a>
+						</div>
+					</div>
+					<div class="sidebar__downloads">
+						<!-- App store download -->
+						<a href="#" class="sidebar__download">
+							<img
+								src="assets/images/app_store.svg"
+								alt="App Store"
+							/>
+						</a>
+						<!-- Google play download -->
+						<a href="#" class="sidebar__download">
+							<img
+								src="assets/images/google_play.svg"
+								alt="Google Play"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="page__content">
+				<div class="page__header dashboard__wrapper">
+					<div class="top-panel__button">
+						<i class="fa-solid fa-bars"></i>
+					</div>
+					<div class="top-panel__exchange">
+						<div class="header-counter">
+							<div class="header__label">BTC/USD</div>
+							<div class="header__value">$39150</div>
+							<div class="header__movement plus">+0.38%</div>
+						</div>
+						<div class="header-counter">
+							<div class="header__label">ETH/USD</div>
+							<div class="header__value">$2608</div>
+							<div class="header__movement minus">-0.52%</div>
+						</div>
+					</div>
+					<div class="top-panel__balance">
+						<div class="balance__title">
+							<i class="fab fa-bitcoin"></i>
+							Real summary balance
+						</div>
+						<div class="balance__value-list">
+							<div class="balance__value-item">
+								<div class="balance__value-text">
+									<i class="fab fa-bitcoin"></i>
+									0.00
+								</div>
+								<div class="balance__value-text-small">
+									<i class="fab fa-bitcoin"></i>
+									0.00
+								</div>
+							</div>
+							<div class="balance__value-item">
+								<div class="balance__value-text">
+									<i class="fab fa-ethereum"></i>
+									0.00
+								</div>
+								<div class="balance__value-text-small">
+									<i class="fab fa-ethereum"></i>
+									0.00
+								</div>
+							</div>
+							<div class="balance__value-item">
+								<div class="balance__value-text">
+									<i class="fas fa-dollar-sign"></i>
+									0.00
+								</div>
+								<div class="balance__value-text-small">
+									<i class="fas fa-dollar-sign"></i>
+									0.00
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="top-panel__user">
+						<div class="top-panel__user-left">
+							<div class="top-panel__user-left-title">
+								Free plan
+							</div>
+							<div class="top-panel__user-left-upgrade">
+								Upgrade
+							</div>
+						</div>
+						<div class="top-panel__user-right">
+							<div class="top-panel__user-info">
+								<div class="top-panel__user-right-avatar">
+									<img
+										src="assets/images/avatar_dashboard.png"
+										alt="Avatar"
+									/>
+								</div>
+								<i class="fas fa-caret-down"></i>
+							</div>
+							<div class="user__dropdown">
+								<div
+									class="user__dropdown-header user__dropdown__container"
+								>
+									vanhungnguyenbku@gmail.com
+								</div>
+								<ul
+									class="user__dropdown-body user__dropdown__container"
+								>
+									<li class="user__dropdown-list">
+										<a href="#" class="user__dropdown-link">
+											<i class="fa-solid fa-home"></i>
+											<div>Dashboard</div>
+										</a>
+									</li>
+
+									<li class="user__dropdown-list">
+										<a href="#" class="user__dropdown-link">
+											<i class="fab fa-battle-net"></i>
+											<div>My Exchanges</div>
+										</a>
+									</li>
+
+									<li class="user__dropdown-list">
+										<a href="#" class="user__dropdown-link">
+											<i
+												class="fa-solid fa-user-group"
+											></i>
+											<div>Invite Friends</div>
+										</a>
+									</li>
+
+									<li class="user__dropdown-list">
+										<a href="#" class="user__dropdown-link">
+											<i class="fa-solid fa-wallet"></i>
+											<div>Subscription</div>
+										</a>
+									</li>
+								</ul>
+								<div
+									class="user__dropdown-footer user__dropdown__container"
+								>
+									<a href="#" class="dropdown__button">
+										<div class="dropdown__button-content">
+											<i
+												class="fa-solid fa-sign-out-alt"
+											></i>
+											<div>Logout</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page__exchange dashboard__wrapper">
+					<h1>Content</h1>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing
+						elit. Minima tempore eum vel facilis est accusamus
+						dolorem magnam vitae repellat consectetur autem ducimus
+						aliquid, aperiam illum! Blanditiis beatae provident
+						eaque voluptates suscipit quaerat, sit rem facilis in
+						cupiditate architecto atque aperiam quisquam repellendus
+						doloremque maxime necessitatibus tempore ipsam veritatis
+						numquam distinctio nihil porro. Delectus, officia
+						architecto sapiente deserunt nobis autem rem amet
+						assumenda nostrum provident quaerat id ullam, harum
+						optio sunt! Ipsam sunt recusandae quaerat exercitationem
+						voluptas harum eos vel voluptates. Voluptatibus facilis
+						qui dolorum neque quis fugit, sint consequuntur ex eaque
+						expedita, numquam eligendi veritatis rem obcaecati
+						cupiditate voluptates, ad laudantium reiciendis a?
+						Reprehenderit nulla reiciendis error adipisci minima
+						sequi porro minus animi, iusto sit beatae unde est
+						excepturi delectus tempore laboriosam deserunt, dolor
+						quam, dicta voluptatibus? Ipsa accusantium hic nemo
+						quisquam voluptatibus cupiditate unde, necessitatibus
+						porro pariatur reiciendis velit officia asperiores
+						magnam omnis debitis vitae perferendis optio saepe
+						consectetur, at expedita temporibus deserunt nulla
+						quaerat! Deserunt nihil beatae aliquid repellendus
+						assumenda quam illum natus cum eveniet omnis dicta ipsum
+						quas perspiciatis, porro aperiam doloribus, commodi
+						eaque exercitationem voluptatum eius? Quas asperiores
+						cumque aliquam maiores nam, nostrum numquam ullam
+						mollitia odio, repellendus minus animi rem ut, explicabo
+						sit earum laudantium corporis voluptate ad neque
+						sapiente. Tempora ab tempore perspiciatis, fuga officia
+						rem est deleniti provident quo aut quia, odit dolores
+						expedita beatae velit tenetur ex, quae magni
+						voluptatibus? Reiciendis dignissimos repellendus quo!
+						Nemo odio voluptas ab officiis excepturi quas eaque
+						autem magni assumenda numquam nostrum culpa accusantium
+						veniam suscipit nobis eum ut, facere vitae iste ea, in
+						porro voluptatum eligendi! Ducimus earum, dolores
+						repellendus molestiae magnam dicta. Necessitatibus porro
+						facere, aspernatur numquam ad nobis suscipit nemo,
+						itaque magnam dolorem reprehenderit voluptatibus
+						consequatur aliquam iste quia! Iure facere esse ullam
+						laudantium earum cupiditate dicta, harum, tempore
+						excepturi ratione veritatis in! Neque maxime eaque nisi
+						molestias, doloremque iste, quo fugit deleniti vel, non
+						error sed recusandae excepturi. Beatae, distinctio
+						accusantium nulla aspernatur, laboriosam, error totam
+						sunt dicta dolor veritatis quia id! Quibusdam
+						voluptatibus excepturi fuga minus veniam beatae corporis
+						illo cumque! Iste perferendis quaerat nobis, consequatur
+						voluptate numquam odio culpa, in cum placeat tempora
+						delectus. Laudantium assumenda necessitatibus et, id
+						fuga perspiciatis odit asperiores incidunt mollitia?
+						Sequi nostrum sunt pariatur eos nobis doloribus magni
+						explicabo soluta beatae, rem, blanditiis aliquid
+						deserunt voluptatibus optio id delectus quod doloremque
+						minima. Alias vitae aperiam impedit commodi numquam
+						error illum iure maxime soluta dolorem adipisci
+						repudiandae, culpa quam mollitia hic sit doloremque
+						tenetur iusto nesciunt porro corporis aut ipsam eum.
+						Magnam, dolores eaque facere consectetur eos
+						perspiciatis neque? Vitae sed, consequuntur quae rem
+						tempore praesentium impedit fugiat quisquam quas qui.
+						Libero assumenda dignissimos voluptates at illo
+						veritatis atque incidunt deleniti nihil odio tempore
+						optio ut inventore sint id eos quidem unde doloribus
+						excepturi, mollitia aliquid sunt reiciendis sequi
+						consequuntur. Ut saepe architecto excepturi sint earum
+						expedita eveniet ab quidem. Eius corrupti cumque libero
+						vero consectetur beatae dignissimos assumenda
+						repudiandae mollitia laborum qui quas explicabo ducimus,
+						quaerat doloremque aliquam soluta architecto, tenetur
+						necessitatibus nemo debitis. Dolorem inventore
+						reiciendis magni adipisci facere natus, est voluptas,
+						itaque eius nisi quidem odit corrupti ipsa voluptatum
+						quam accusantium quia vero accusamus ex cum quisquam
+						perspiciatis necessitatibus! Corrupti amet reiciendis,
+						illum velit nemo at possimus maxime alias perspiciatis
+						est provident a magnam laudantium sed asperiores, quis
+						repellat vel neque? Veritatis facilis placeat maiores id
+						architecto quia quaerat amet! Dolor et quia vel eaque at
+						facilis quod veniam, incidunt delectus similique odit,
+						reprehenderit saepe laboriosam cum? Hic, qui quasi vero
+						praesentium dolore delectus ea fugiat in inventore error
+						voluptate magnam ut possimus rerum, adipisci expedita
+						dolorem. Dolor temporibus culpa voluptatibus rem
+						adipisci totam autem quasi corporis corrupti, pariatur
+						consectetur consequatur harum quidem aliquam. Beatae
+						nulla dolores in non inventore quos totam adipisci
+						facere officiis molestiae aut placeat possimus assumenda
+						enim, at, ab eum natus magnam deleniti ipsam ex
+						consequuntur commodi nam odit. Distinctio doloribus nam
+						culpa omnis corporis. Nemo quas delectus inventore
+						voluptatibus, ipsam, magni, deleniti fugit laboriosam
+						vel cupiditate placeat. Reprehenderit, ut veritatis
+						consequuntur vero omnis ipsum doloremque cum officia
+						aspernatur, fuga vel rerum illum animi, delectus quo
+						nobis praesentium quis repellendus fugiat tenetur autem
+						mollitia porro sequi et! Corrupti ut, eaque placeat
+						accusantium minima adipisci. Iusto quos debitis iure
+						earum nisi rerum nemo necessitatibus dolore, voluptates
+						corporis fuga, ex vero, a vitae reprehenderit dolor
+						minima velit. Aspernatur alias quisquam ex soluta?
+						Libero, veniam est velit ipsum numquam maiores quam
+						laborum fugiat facilis rerum adipisci, exercitationem
+						autem. Rem eligendi, reiciendis delectus minima
+						laudantium tempore! Dignissimos aut unde, sunt debitis
+						doloribus dolorem similique earum blanditiis nam qui.
+						Inventore saepe nobis totam aut doloribus minus aliquam
+						cumque nostrum quibusdam unde aliquid repellat rem
+						laboriosam, ab a ad qui. Modi ratione veritatis
+						dignissimos omnis, eaque vitae hic corporis labore natus
+						unde tempora vel quas officia similique voluptate
+						quibusdam nesciunt dolore, minima provident
+						reprehenderit laudantium maxime quisquam tenetur autem!
+						Atque corrupti perferendis molestiae quasi, fugit,
+						veritatis laboriosam nesciunt similique pariatur ullam
+						cum, beatae corporis! Optio, porro. Blanditiis,
+						excepturi asperiores nemo doloribus voluptate in
+						quisquam, placeat praesentium veritatis explicabo
+						pariatur quos maxime iste! Necessitatibus, labore
+						laudantium. Itaque repellendus, quos error corporis,
+						incidunt, voluptatum accusantium dignissimos consequatur
+						dolore animi cupiditate minus! Recusandae facilis
+						provident consectetur eligendi odio nam, veritatis
+						nesciunt sint accusamus accusantium commodi ab. Repellat
+						non rem inventore labore deleniti a quasi commodi enim
+						illum, illo doloribus totam. Officia magni consequatur
+						maiores dolores, perferendis natus odio reiciendis
+						similique, itaque explicabo placeat impedit alias unde
+						debitis, odit praesentium repellendus earum dicta optio
+						at consectetur quasi soluta? Id aspernatur, quaerat
+						aperiam animi explicabo, similique et repudiandae quos
+						tenetur, numquam maxime natus. Minus possimus pariatur
+						inventore explicabo saepe illum aliquam ut quae? Totam,
+						nemo sed nam velit laboriosam autem consectetur mollitia
+						incidunt qui illo distinctio animi laudantium corporis
+						possimus at adipisci accusantium eos nobis aspernatur
+						assumenda commodi numquam ipsam exercitationem? Unde,
+						consectetur. In quam ab asperiores sunt possimus beatae,
+						incidunt consequatur deserunt rerum cum nemo soluta
+						eligendi voluptates, dolorum ipsa odit. Culpa odio id
+						quo in recusandae aspernatur! Deserunt, dignissimos!
+						Enim et veritatis cum ratione a corporis officia cumque
+						iure.
+					</p>
+				</div>
+				<div class="page__footer dashboard__wrapper">
+                    <div class="page__footer__logo-list">
+                        <div class="page__footer__logo-item">
+                            <img src="assets/images/logo5.svg" alt="logo">
+                        </div>
+                        <div class="page__footer__logo-item">
+                            <img src="assets/images/logo6.svg" alt="logo">
+                        </div>
+                        <div class="page__footer__logo-item">
+                            <img src="assets/images/logo7.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="page__footer__term-and-mail">
+                        <div class="page__footer__term">
+                            <a href="#">Term</a> and 
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                        <div class="page__footer__mail">
+                            <a href="#">vanhungnguyenbku@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="page__footer__copyright">
+                        © 2017-2022 3Commas
+                    </div>
+			    </div>
+		<!-- javascript -->
+		<!-- Swiper JS -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="assets/js/scirpt.js"></script>
+	</body>
+</html>
