@@ -45,8 +45,9 @@ body {
   padding: 1.5rem 4rem;
   outline: none;
   border-radius: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #fff;
+  text-align: center;
   background: #5459ee;
   background: linear-gradient(139deg, #5459ee 0%, #5758ee 50%, #864bee 100%);
   display: inline-block;
@@ -56,6 +57,9 @@ body {
 .button--green {
   background: #07bf60;
 }
+.button--secondary {
+  background: #00a59a;
+}
 .button--apple {
   background: black;
   background: linear-gradient(139deg, black 0%, black 50%, black 100%);
@@ -63,6 +67,19 @@ body {
 .button--facebook {
   background: #3b5998;
   background: linear-gradient(139deg, #3b5998 0%, #3b5998 50%, #3b5998 100%);
+}
+.button--transparent {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.button--small {
+  padding: 0.8rem 1rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.button--square {
+  border-radius: 0.3rem;
 }
 .button:hover {
   opacity: 0.9;
@@ -110,6 +127,17 @@ body {
 
 .text-clamp--3 {
   -webkit-line-clamp: 3;
+}
+
+.modal-header {
+  padding: 2.4rem;
+  font-size: 1.8rem;
+  background-color: #f7f7f9;
+}
+
+.modal-body {
+  padding: 2rem 3rem;
+  font-size: 1.3rem;
 }
 
 @media screen and (max-width: 1099px) {
@@ -1617,20 +1645,10 @@ body {
     margin-bottom: 1rem;
   }
 }
-.page__layout {
-  display: flex;
-  align-items: flex-start;
-  min-height: 100vh;
-  width: 100%;
-  background-color: #f7f7f9;
-  color: #2f4050;
-}
-
 .sidebar {
   position: fixed;
   width: 23.2rem;
   height: 100vh;
-  min-height: fit-content;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1718,6 +1736,15 @@ body {
   margin-right: 1rem;
 }
 
+.page__layout {
+  display: flex;
+  align-items: flex-start;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f7f7f9;
+  color: #2f4050;
+}
+
 .page__content {
   display: flex;
   width: 100%;
@@ -1727,8 +1754,8 @@ body {
   margin-left: 23.2rem;
 }
 
-.dashboard__wrapper {
-  padding: 0 1rem;
+.page__wrapper {
+  padding: 1rem 2rem;
 }
 
 .page__header {
@@ -1750,6 +1777,7 @@ body {
   margin-right: 2rem;
   font-size: 2rem;
   cursor: pointer;
+  display: none;
 }
 
 .top-panel__exchange {
@@ -1869,6 +1897,10 @@ body {
   border: 1px solid #cfdae0;
   border-radius: 1rem;
   width: 19rem;
+  display: none;
+}
+.user__dropdown.active {
+  display: block;
 }
 
 .user__dropdown__container {
@@ -1931,9 +1963,11 @@ body {
   margin-right: 1rem;
 }
 
-.page__exchange {
+.page__main {
   margin-top: 7rem;
-  height: 100rem;
+  width: 100%;
+  min-height: calc(100vh - 7rem - 5rem);
+  flex: 1;
 }
 
 .page__footer {
@@ -1974,6 +2008,242 @@ body {
 }
 .page__footer__term {
   border-right: 1px solid gray;
+}
+
+.subscription__alert {
+  background-color: #00a59a;
+  color: #fff;
+  margin-top: 1.5rem;
+  padding: 0 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+  width: 100%;
+}
+.subscription__alert-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.4rem;
+}
+.subscription__alert-title i {
+  margin-right: 1rem;
+}
+.subscription__alert-title div a {
+  color: #f69832;
+  text-decoration: underline;
+}
+.subscription__alert-title div a:hover {
+  opacity: 0.9;
+}
+.subscription__alert-button {
+  margin-right: 2rem;
+}
+.subscription__main {
+  width: 100%;
+  max-width: 110rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.subscription__main-tab {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+}
+.subscription__main-tab-category {
+  margin-right: 0.5rem;
+}
+.subscription__main-tab-item {
+  padding: 0.5rem 0;
+  margin: 0 1rem;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.subscription__main-tab-item.active {
+  border-bottom: 2px solid #ccc;
+  opacity: 1;
+}
+.subscription__main-tab-item:hover {
+  opacity: 1;
+}
+.subscription__tab-list {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.subscription__item {
+  width: calc(25% - 2rem);
+  background: #fff;
+  border-radius: 0.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.subscription__item-header {
+  padding: 4rem 1.2rem 1.2rem 1.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+  flex-shrink: 1;
+}
+.subscription__item-name {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.subscription__item-oldprice {
+  font-size: 3.2rem;
+  color: #d2d4d7;
+  text-decoration: line-through;
+}
+.subscription__item-oldprice.disabled {
+  color: transparent;
+}
+.subscription__item-price {
+  font-size: 4.8rem;
+  color: #00a59a;
+  margin-bottom: 1.5rem;
+}
+.subscription__item-expired {
+  font-size: 1.4rem;
+  color: #00a59a;
+}
+.subscription__item-button {
+  font-size: 1.8rem;
+  padding: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.subscription__item-button.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.subscription__item-badge {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  font-size: 1.2rem;
+  padding: 0.3rem 1rem;
+  color: #fff;
+  background-color: #00a59a;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.subscription__item-badge--red {
+  background-color: #ee7d8b;
+}
+.subscription__item-main {
+  padding: 1.6rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.subscription__item-date {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #929da8;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.subscription__item-list {
+  margin-top: auto;
+}
+.subscription__item-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.subscription__item-text i {
+  color: #00a59a;
+  font-size: 1.6rem;
+  margin-right: 0.5rem;
+  width: 2rem;
+}
+.subscription__item-text i.fa-times {
+  color: #ee7d8b;
+}
+
+.modal-deposit {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-deposit-content {
+  padding: 1.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  background-color: #f7f7f9;
+  margin-bottom: 1.5rem;
+}
+
+.modal-deposit-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-deposit-noti {
+  margin-bottom: 1rem;
+}
+
+.modal-deposit-title-small {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.modal-deposit-select {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.modal-deposit-payment-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.modal-deposit-payment-item {
+  width: calc(33.33% - 1rem);
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.modal-deposit-payment-item:hover, .modal-deposit-payment-item.active {
+  border: 1px solid #00a59a;
+}
+
+.modal-deposit-terms {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  display: flex;
+}
+.modal-deposit-terms input {
+  margin-right: 0.8rem;
+  position: relative;
+  top: 0.3rem;
+}
+
+.modal-deposit-button {
+  margin-bottom: 1rem;
+}
+.modal-deposit-button.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.modal-deposit-note {
+  color: #6b7b8b;
+  text-align: center;
 }
 
 @media screen and (max-width: 1099px) {

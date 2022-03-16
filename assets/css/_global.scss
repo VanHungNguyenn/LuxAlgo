@@ -2,12 +2,14 @@ $white-color: #fff;
 $black-color: #0c0c0c;
 $primary-color: #535aee;
 $green-color: #07bf60;
+$secondary-color: #00a59a;
 $text-color-dashboard: #2f4050;
 $background-color-dashboard: #f7f7f9;
 $text-color-sidebar: #929da8;
 $background-color-sidebar: #2f4050;
 $width-sidebar: 23.2rem;
 $height-header: 7rem;
+$height-footer: 5rem;
 
 html {
 	font-size: 62.5%;
@@ -58,8 +60,9 @@ body {
 	padding: 1.5rem 4rem;
 	outline: none;
 	border-radius: 1rem;
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	color: $white-color;
+	text-align: center;
 
 	background: rgb(84, 89, 238);
 	background: linear-gradient(
@@ -75,6 +78,10 @@ body {
 
 	&--green {
 		background: $green-color;
+	}
+
+	&--secondary {
+		background: $secondary-color;
 	}
 
 	&--apple {
@@ -95,6 +102,22 @@ body {
 			rgba(59, 89, 152, 1) 50%,
 			rgba(59, 89, 152, 1) 100%
 		);
+	}
+
+	&--transparent {
+		background: transparent;
+		color: $white-color;
+		border: 1px solid $white-color;
+	}
+
+	&--small {
+		padding: 0.8rem 1rem 1rem;
+		font-size: 1.4rem;
+		font-weight: 500;
+	}
+
+	&--square {
+		border-radius: 0.3rem;
 	}
 
 	&:hover {
@@ -154,6 +177,17 @@ body {
 }
 .text-clamp--3 {
 	-webkit-line-clamp: 3;
+}
+
+.modal-header {
+	padding: 2.4rem;
+	font-size: 1.8rem;
+	background-color: #f7f7f9;
+}
+
+.modal-body {
+	padding: 2rem 3rem;
+	font-size: 1.3rem;
 }
 
 @media screen and (max-width: 1099px) {

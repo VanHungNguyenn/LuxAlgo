@@ -1,0 +1,272 @@
+.subscription {
+	&__alert {
+		background-color: $secondary-color;
+		color: $white-color;
+		margin-top: 1.5rem;
+		padding: 0 2rem;
+		border-radius: 0.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 6rem;
+		width: 100%;
+
+		&-title {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			font-size: 1.4rem;
+
+			i {
+				margin-right: 1rem;
+			}
+
+			div a {
+				color: #f69832;
+				text-decoration: underline;
+
+				&:hover {
+					opacity: 0.9;
+				}
+			}
+		}
+
+		&-button {
+			margin-right: 2rem;
+		}
+	}
+	// Main
+	&__main {
+		width: 100%;
+		max-width: 110rem;
+		margin: 0 auto;
+		margin-top: 2rem;
+	}
+
+	&__main-tab {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		font-size: 1.5rem;
+		margin-bottom: 4rem;
+
+		&-category {
+			margin-right: 0.5rem;
+		}
+
+		&-item {
+			padding: 0.5rem 0;
+			margin: 0 1rem;
+			cursor: pointer;
+			opacity: 0.9;
+
+			&.active {
+				border-bottom: 2px solid #ccc;
+				opacity: 1;
+			}
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__tab-list {
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
+	}
+
+	&__item {
+		width: calc(25% - 2rem);
+		background: $white-color;
+		border-radius: 0.5rem;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+
+		&-header {
+			padding: 4rem 1.2rem 1.2rem 1.2rem;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			font-weight: bold;
+			border-bottom: 2px solid #ccc;
+			flex-shrink: 1;
+		}
+
+		&-name {
+			font-size: 1.8rem;
+			margin-bottom: 2rem;
+		}
+
+		&-oldprice {
+			font-size: 3.2rem;
+			color: #d2d4d7;
+			text-decoration: line-through;
+
+			&.disabled {
+				color: transparent;
+			}
+		}
+
+		&-price {
+			font-size: 4.8rem;
+			color: $secondary-color;
+			margin-bottom: 1.5rem;
+		}
+
+		&-expired {
+			font-size: 1.4rem;
+			color: $secondary-color;
+		}
+
+		&-button {
+			font-size: 1.8rem;
+			padding: 1.2rem;
+			margin-bottom: 0.5rem;
+
+			&.disabled {
+				opacity: 0.5;
+				pointer-events: none;
+			}
+		}
+
+		&-badge {
+			position: absolute;
+			top: 1rem;
+			right: 0;
+			font-size: 1.2rem;
+			padding: 0.3rem 1rem;
+			color: $white-color;
+			background-color: $secondary-color;
+			border-top-left-radius: 0.5rem;
+			border-bottom-left-radius: 0.5rem;
+
+			&--red {
+				background-color: #ee7d8b;
+			}
+		}
+
+		&-main {
+			padding: 1.6rem 1.2rem;
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+		}
+
+		&-date {
+			font-size: 1.3rem;
+			text-align: center;
+			color: #929da8;
+			font-weight: bold;
+			margin-bottom: 2rem;
+		}
+
+		&-list {
+			margin-top: auto;
+		}
+
+		&-text {
+			font-size: 1.3rem;
+			font-weight: bold;
+			margin-bottom: 1.5rem;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+
+			i {
+				color: $secondary-color;
+				font-size: 1.6rem;
+				margin-right: 0.5rem;
+				width: 2rem;
+
+				&.fa-times {
+					color: #ee7d8b;
+				}
+			}
+		}
+	}
+}
+
+// modal-deposit
+.modal-deposit {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-deposit-content {
+	padding: 1.6rem;
+	border-radius: 0.5rem;
+	border: 1px solid #ccc;
+	background-color: #f7f7f9;
+	margin-bottom: 1.5rem;
+}
+
+.modal-deposit-title {
+	font-size: 1.8rem;
+	margin-bottom: 1.5rem;
+}
+
+.modal-deposit-noti {
+	margin-bottom: 1rem;
+}
+
+.modal-deposit-title-small {
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.modal-deposit-select {
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+}
+
+.modal-deposit-payment-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 3rem;
+}
+
+.modal-deposit-payment-item {
+	width: calc(33.33% - 1rem);
+	border-radius: 0.5rem;
+	border: 1px solid #ccc;
+	padding: 0.5rem;
+	text-align: center;
+	font-size: 3rem;
+	cursor: pointer;
+
+	&:hover,
+	&.active {
+		border: 1px solid $secondary-color;
+	}
+}
+
+.modal-deposit-terms {
+	font-size: 1.5rem;
+	margin-bottom: 3rem;
+	display: flex;
+
+	input {
+		margin-right: 0.8rem;
+		position: relative;
+		top: 0.3rem;
+	}
+}
+
+.modal-deposit-button {
+	margin-bottom: 1rem;
+
+	&.disabled {
+		opacity: 0.5;
+		pointer-events: none;
+	}
+}
+
+.modal-deposit-note {
+	color: #6b7b8b;
+
+	text-align: center;
+}

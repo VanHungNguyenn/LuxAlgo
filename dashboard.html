@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lux Algo | Advanced TradingView Tools + Bots</title>
+		<!-- import Roboto font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- import font-awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- Link Swiper's CSS -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<link rel="stylesheet" href="assets/css/reset.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<div class="page__layout">
+			<div class="sidebar">
+				<div class="sidebar__logo">
+					<a href="#">
+						<img src="assets/images/logo_3commas.svg" alt="logo" />
+					</a>
+				</div>
+				<ul class="sidebar__links">
+					<li class="sidebar__link sidebar__active">
+						<a href="dashboard.html">
+							<i class="fa-solid fa-home"></i>
+							<div>Dashboard</div>
+						</a>
+					</li>
+					<li class="sidebar__link">
+						<a href="signalhistory.html">
+							<i class="fa-solid fa-user-group"></i>
+							<div>Signal History</div>
+						</a>
+					</li>
+					<li class="sidebar__link">
+						<a href="subscriptions.html">
+							<i class="fa-solid fa-wallet"></i>
+							<div>Subscription</div>
+							<span>Sale</span>
+						</a>
+					</li>
+				</ul>
+				<div class="sidebar__footer">
+					<div class="sidebar__socials">
+						<div class="sidebar__socials-content">
+							Come join us:
+						</div>
+						<div class="sidebar__socials-list">
+							<a href="#" class="sidebar__social">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+							<a href="#" class="sidebar__social">
+								<i class="fa-brands fa-facebook-f"></i>
+							</a>
+							<a href="#" class="sidebar__social">
+								<i class="fa-brands fa-youtube"></i>
+							</a>
+							<a href="#" class="sidebar__social">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+
+							<a href="#" class="sidebar__social">
+								<i class="fa-brands fa-discord"></i>
+							</a>
+						</div>
+					</div>
+					<div class="sidebar__downloads">
+						<!-- App store download -->
+						<a href="#" class="sidebar__download">
+							<img
+								src="assets/images/app_store.svg"
+								alt="App Store"
+							/>
+						</a>
+						<!-- Google play download -->
+						<a href="#" class="sidebar__download">
+							<img
+								src="assets/images/google_play.svg"
+								alt="Google Play"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="page__content">
+				<div class="page__header page__wrapper">
+					<div class="top-panel__button">
+						<i class="fa-solid fa-bars"></i>
+					</div>
+					<div class="top-panel__exchange">
+						<div class="header-counter">
+							<div class="header__label">BTC/USD</div>
+							<div class="header__value">$39150</div>
+							<div class="header__movement plus">+0.38%</div>
+						</div>
+						<div class="header-counter">
+							<div class="header__label">ETH/USD</div>
+							<div class="header__value">$2608</div>
+							<div class="header__movement minus">-0.52%</div>
+						</div>
+					</div>
+					<div class="top-panel__balance">
+						<div class="balance__title">
+							<i class="fab fa-bitcoin"></i>
+							Real summary balance
+						</div>
+						<div class="balance__value-list">
+							<div class="balance__value-item">
+								<div class="balance__value-text">
+									<i class="fab fa-bitcoin"></i>
+									0.00
+								</div>
+								<div class="balance__value-text-small">
+									<i class="fab fa-bitcoin"></i>
+									0.00
+								</div>
+							</div>
+							<div class="balance__value-item">
+								<div class="balance__value-text">
+									<i class="fab fa-ethereum"></i>
+									0.00
+								</div>
+								<div class="balance__value-text-small">
+									<i class="fab fa-ethereum"></i>
+									0.00
+								</div>
+							</div>
+							<div class="balance__value-item">
+								<div class="balance__value-text">
+									<i class="fas fa-dollar-sign"></i>
+									0.00
+								</div>
+								<div class="balance__value-text-small">
+									<i class="fas fa-dollar-sign"></i>
+									0.00
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="top-panel__user">
+						<div class="top-panel__user-left">
+							<div class="top-panel__user-left-title">
+								Free plan
+							</div>
+							<div class="top-panel__user-left-upgrade">
+								Upgrade
+							</div>
+						</div>
+						<div class="top-panel__user-right">
+							<div class="top-panel__user-info">
+								<div class="top-panel__user-right-avatar">
+									<img
+										src="assets/images/avatar_dashboard.png"
+										alt="Avatar"
+									/>
+								</div>
+								<i class="fas fa-caret-down"></i>
+							</div>
+							<div class="user__dropdown">
+								<div
+									class="user__dropdown-header user__dropdown__container"
+								>
+									vanhungnguyenbku@gmail.com
+								</div>
+								<ul
+									class="user__dropdown-body user__dropdown__container"
+								>
+									<li class="user__dropdown-list">
+										<a href="dashboard.html" class="user__dropdown-link">
+											<i class="fa-solid fa-home"></i>
+											<div>Dashboard</div>
+										</a>
+									</li>
+
+									<li class="user__dropdown-list">
+										<a href="signalhistory.html" class="user__dropdown-link">
+											<i class="fab fa-battle-net"></i>
+											<div>Signal History</div>
+										</a>
+									</li>
+
+									<li class="user__dropdown-list">
+										<a href="subscriptions.html" class="user__dropdown-link">
+											<i
+												class="fa-solid fa-user-group"
+											></i>
+											<div>Subscription</div>
+										</a>
+									</li>
+								</ul>
+								<div
+									class="user__dropdown-footer user__dropdown__container"
+								>
+									<a href="#" class="dropdown__button">
+										<div class="dropdown__button-content">
+											<i
+												class="fa-solid fa-sign-out-alt"
+											></i>
+											<div>Logout</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page__main page__wrapper">
+					<h1>Dashboard</h1>
+				</div>
+				<div class="page__footer page__wrapper">
+                    <div class="page__footer__logo-list">
+                        <div class="page__footer__logo-item">
+                            <img src="assets/images/logo5.svg" alt="logo">
+                        </div>
+                        <div class="page__footer__logo-item">
+                            <img src="assets/images/logo6.svg" alt="logo">
+                        </div>
+                        <div class="page__footer__logo-item">
+                            <img src="assets/images/logo7.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="page__footer__term-and-mail">
+                        <div class="page__footer__term">
+                            <a href="#">Term</a> and 
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                        <div class="page__footer__mail">
+                            <a href="#">vanhungnguyenbku@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="page__footer__copyright">
+                        © 2017-2022 3Commas
+                    </div>
+			    </div>
+		<!-- javascript -->
+		<!-- Swiper JS -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="assets/js/scirpt.js"></script>
+	</body>
+</html>
