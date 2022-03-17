@@ -99,22 +99,22 @@ function switchTab(tab) {
 	document.getElementById(tab).style.display = 'flex'
 }
 
-// depositModal
-const modalDepositPaymentItems = document.querySelectorAll(
-	'.modal-deposit-payment-item'
+// Tooltip copied
+var tooltipTriggerList = [].slice.call(
+	document.querySelectorAll('[data-bs-toggle="tooltip"]')
 )
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+	return new bootstrap.Tooltip(tooltipTriggerEl)
+})
 
-for (let index = 0; index < modalDepositPaymentItems.length; index++) {
-	modalDepositPaymentItems[index].addEventListener('click', function () {
-		const modalDepositPaymentItem = document.querySelectorAll(
-			'.modal-deposit-payment-item'
-		)
-		for (let index = 0; index < modalDepositPaymentItem.length; index++) {
-			modalDepositPaymentItem[index].classList.remove('active')
-		}
-		this.classList.add('active')
-	})
+const copyToClipboard = (elementId) => {
+	const text = document.getElementById(elementId).innerHTML
+	navigator.clipboard
+		.writeText(text)
+		.then(() => {
+			console.log(`"${text}" was copied to clipboard.`)
+		})
+		.catch((err) => {
+			console.error(`Error copying text to clipboard: ${err}`)
+		})
 }
-
-const modalDepositCheckbox = document.querySelector('.modal-deposit-checkbox')
-const modalDepositButton = document.querySelector('.modal-deposit-button')

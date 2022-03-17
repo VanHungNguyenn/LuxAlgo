@@ -33,6 +33,7 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		></script>
+        
 		<link rel="stylesheet" href="assets/css/reset.css" />
 		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
@@ -586,7 +587,7 @@
 
                    
                       
-                      <!-- Modal -->
+                      <!-- Modal deposit -->
                       <div class="modal fade" id="depositModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                           <div class="modal-content">
@@ -605,36 +606,28 @@
                                     <div class="modal-deposit-noti">
                                         Please specify your country of residence and postal code. This information is required to ensure account and payment security, and to combat fraud.
                                     </div>
+                                  
                                     <div class="modal-deposit-title-small">
-                                        Country *
-                                    </div>
-                                    <select class="modal-deposit-select form-select form-select-sm" aria-label=".form-select-sm example">
-                                        <option selected>Select country</option>
-                                        <option value="1">Afganistan</option>
-                                        <option value="2">China</option>
-                                        <option value="3">VietNam</option>
-                                      </select>
-                                    <div class="modal-deposit-title-small">
-                                        Choose a payment method *
+                                        A payment method
                                     </div>
                                     <div class="modal-deposit-payment-list">
                                         <div class="modal-deposit-payment-item active">
-                                            <i class="fab fa-cc-visa"></i>
-                                        </div>
-                                        <div class="modal-deposit-payment-item">
-                                            <i class="fab fa-paypal"></i>
-                                        </div>
-                                        <div class="modal-deposit-payment-item">
                                             <i class="fab fa-bitcoin"></i>
                                         </div>
                                     </div>
+                                    <select class="modal-deposit-select form-select form-select-sm" aria-label=".form-select-sm example">
+                                        <option selected>Select a payment method</option>
+                                        <option value="BTC">BTC</option>
+                                        <option value="USDT">USDT</option>
+                                        <option value="ETH">ETH</option>
+                                      </select>
                                     <div class="modal-deposit-terms">
                                         <input type="checkbox" name="term" id="term" class="modal-deposit-checkbox">
                                         <div class="modal-deposit-policy">
                                             I accept <a href="#">Terms of use</a>  and agree to payment amount and accept <a href="#">Recurring Payment Policy</a>  and <a href="#">Refund Policy</a>  
                                         </div>
                                     </div>
-                                    <div class="button button--secondary button--square modal-deposit-button">Pay $174.0</div>
+                                    <div class="button button--secondary button--square modal-deposit-button" data-bs-toggle="modal" data-bs-target="#confirmModal">Pay $174.0</div>
                                     <div class="modal-deposit-note">
                                         Sales Tax / VAT Included
                                     </div>
@@ -643,6 +636,65 @@
                           </div>
                         </div>
                       </div>
+
+                      <!-- Modal confirm -->
+                      <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="ConfirmModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">Subscription confirmation</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-confirm">
+                                    <div class="modal-confirm-title">
+                                        Address:
+                                    </div>
+                                    <div class="modal-confirm-code">
+                                        <div onclick="copyToClipboard('code-address')" class="modal-confirm-code-copy-address" data-bs-toggle="tooltip" title="Copy!">
+                                            <i class="fa-solid fa-clone"></i>
+                                        </div>
+                                        <div id="code-address" class="modal-confirm-code-address">
+                                            TR4B8XQei74YANZiQTRCfoR3GqBdqoAw74
+                                        </div>
+                                    </div>
+                                    <div class="modal-confirm-title">
+                                        Address available within 3 hours
+                                    </div>
+                                    <div class="modal-confirm-qrcode">
+                                        <img src="assets/images/qrcode.png" alt="">
+                                    </div>
+                                    <div class="modal-confirm-title">
+                                        Amount:
+                                    </div>
+                                    <div class="modal-confirm-code">
+                                        <div onclick="copyToClipboard('code-money')"  class="modal-confirm-code-copy-money" data-bs-toggle="tooltip" title="Copy!">
+                                            <i class="fa-solid fa-clone"></i>
+                                        </div>
+                                        <div id="code-money" class="modal-confirm-code-money">
+                                            173.81362
+                                        </div>
+                                        <div class="modal-confirm-code-unit">
+                                            USDT.TRC20 + <span>FEE!</span>
+                                        </div>
+                                    </div>
+                                    <div class="modal-confirm-note">
+                                        Sales Tax / VAT Included
+                                    </div>
+                                    <div class="modal-confirm-noti">
+                                        Please add a commission for transfer or withdrawal from the exchange
+                                    </div>
+                                    <div class="button button--secondary button--square modal-confirm-button">I did the payment</div>
+                                    <div class="modal-deposit-note">
+                                        After you make payment, you can watch status of this payment here: 
+                                    </div>
+                                    <a href="#" class="modal-deposit-status-link">STATUS LINK</a> 
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
 				</div>
 				<div class="page__footer page__wrapper">
                     <div class="page__footer__logo-list">
