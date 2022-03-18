@@ -150,3 +150,20 @@ const copyToClipboard = (elementId) => {
 			console.error(`Error copying text to clipboard: ${err}`)
 		})
 }
+
+// Table daily
+$(document).ready(function () {
+	$('#tableDaily').DataTable({
+		paging: false,
+		lengthChange: false,
+		searching: false,
+		info: false,
+		sortable: false,
+		ordering: false,
+	})
+})
+
+// Table trading
+$(document).ready(function () {
+	$('#tableTrading').DataTable({})
+})
