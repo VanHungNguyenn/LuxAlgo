@@ -52,12 +52,12 @@ function showSidebar() {
 // Resize, block sidebar
 // min-width: 1099px, auto show sidebar
 
-// document.addEventListener('resize', () => {
-// 	if (!tabletSize.matches) {
-// 		sidebar.style.left = '0'
-// 		overlay.style.display = 'block'
-// 	}
-// })
+document.addEventListener('resize', () => {
+	if (!tabletSize.matches) {
+		sidebar.style.left = '0'
+		overlay.style.display = 'block'
+	}
+})
 
 // click outside of sidebar to hide it in max-width: 1099px
 document.addEventListener('click', (e) => {
