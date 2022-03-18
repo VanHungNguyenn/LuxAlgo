@@ -38,6 +38,7 @@
 		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body>
+        <div class="overlay"></div>
 		<div class="page__layout">
 			<div class="sidebar">
 				<div class="sidebar__logo">
@@ -110,7 +111,7 @@
 			</div>
 			<div class="page__content">
 				<div class="page__header page__wrapper">
-					<div class="top-panel__button">
+					<div onclick="showSidebar()" class="top-panel__button" >
 						<i class="fa-solid fa-bars"></i>
 					</div>
 					<div class="top-panel__exchange">
@@ -125,6 +126,12 @@
 							<div class="header__movement minus">-0.52%</div>
 						</div>
 					</div>
+                    <div class="top-panel__balance-mobile">
+                        <div>
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
 					<div class="top-panel__balance">
 						<div class="balance__title">
 							<i class="fab fa-bitcoin"></i>

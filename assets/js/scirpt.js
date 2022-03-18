@@ -38,6 +38,38 @@ var swiper = new Swiper('.mySwiper', {
 	},
 })
 
+// show and hide sidebar
+let sidebar = document.querySelector('.sidebar')
+let buttonSidebar = document.querySelector('.top-panel__button')
+let overlay = document.querySelector('.overlay')
+var tabletSize = window.matchMedia('(max-width: 1099px)')
+
+function showSidebar() {
+	sidebar.classList.add('active')
+	overlay.style.display = 'block'
+}
+
+// Resize, block sidebar
+// min-width: 1099px, auto show sidebar
+
+// document.addEventListener('resize', () => {
+// 	if (!tabletSize.matches) {
+// 		sidebar.style.left = '0'
+// 		overlay.style.display = 'block'
+// 	}
+// })
+
+// click outside of sidebar to hide it in max-width: 1099px
+document.addEventListener('click', (e) => {
+	if (
+		!e.target.closest('.top-panel__button') &&
+		!e.target.closest('.sidebar')
+	) {
+		sidebar.classList.remove('active')
+		overlay.style.display = 'none'
+	}
+})
+
 // accordion
 const ask = document.querySelectorAll('.question__accordion-title')
 

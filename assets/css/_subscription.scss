@@ -3,12 +3,12 @@
 		background-color: $secondary-color;
 		color: $white-color;
 		margin-top: 1.5rem;
-		padding: 0 2rem;
+		padding: 1rem 2rem;
 		border-radius: 0.5rem;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		height: 6rem;
+		min-height: 6rem;
 		width: 100%;
 
 		&-title {
@@ -48,7 +48,7 @@
 		align-items: center;
 		justify-content: flex-end;
 		font-size: 1.5rem;
-		margin-bottom: 4rem;
+		margin-bottom: 2rem;
 
 		&-category {
 			margin-right: 0.5rem;
@@ -75,15 +75,18 @@
 		display: flex;
 		align-items: stretch;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 
 	&__item {
-		width: calc(25% - 2rem);
+		width: calc(25% - 1rem);
 		background: $white-color;
 		border-radius: 0.5rem;
 		position: relative;
 		display: flex;
 		flex-direction: column;
+		margin-top: 2rem;
+		border: 1px solid #ccc;
 
 		&-header {
 			padding: 4rem 1.2rem 1.2rem 1.2rem;
@@ -124,7 +127,7 @@
 		&-button {
 			font-size: 1.8rem;
 			padding: 1.2rem;
-			margin-bottom: 0.5rem;
+			margin-bottom: 2rem;
 
 			&.disabled {
 				opacity: 0.5;
@@ -325,4 +328,40 @@
 
 .modal-confirm-button {
 	margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1099px) {
+	.subscription__alert-button {
+		margin-right: 0;
+		margin-left: 2rem;
+	}
+
+	.subscription__alert-button {
+		white-space: nowrap;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.subscription__item {
+		width: calc(50% - 1rem);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	/* start of medium tablet styles */
+}
+
+@media screen and (max-width: 479px) {
+	.subscription__alert {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.subscription__alert-title {
+		margin-bottom: 1rem;
+	}
+
+	.subscription__item {
+		width: 100%;
+	}
 }
