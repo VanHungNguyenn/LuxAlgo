@@ -1,0 +1,46 @@
+.signalhistory {
+	display: flex;
+	flex-direction: column;
+}
+
+.signalhistory__statictis {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	&-item {
+		width: calc(20% - 1rem);
+		margin-right: 0.5rem;
+		margin-left: 0.5rem;
+
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		border: 1px solid #ccc;
+		border-radius: 1rem;
+		padding: 1rem;
+		margin-top: 1rem;
+
+		&-title {
+			font-size: 1.7rem;
+			font-weight: bold;
+			margin-bottom: 1rem;
+		}
+
+		&-value {
+			font-size: 3rem;
+			font-weight: bold;
+			margin-bottom: 1rem;
+		}
+	}
+
+	&-text-green {
+		color: #00c853;
+	}
+
+	&-text-red {
+		color: #ff5252;
+	}
+}

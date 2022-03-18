@@ -25,18 +25,21 @@
 			rel="stylesheet"
 			href="https://unpkg.com/swiper/swiper-bundle.min.css"
 		/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
 			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		></script>
+        
 		<link rel="stylesheet" href="assets/css/reset.css" />
 		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body>
+        <div class="overlay"></div>
 		<div class="page__layout">
-			
 			<div class="sidebar">
 				<div class="sidebar__logo">
 					<a href="#">
@@ -56,7 +59,7 @@
 							<div>Signal History</div>
 						</a>
 					</li>
-					<li class="sidebar__link">
+					<li class="sidebar__link ">
 						<a href="subscriptions.html">
 							<i class="fa-solid fa-wallet"></i>
 							<div>Subscription</div>
@@ -108,7 +111,7 @@
 			</div>
 			<div class="page__content">
 				<div class="page__header page__wrapper">
-					<div class="top-panel__button" onclick="showSidebar()">
+					<div onclick="showSidebar()" class="top-panel__button" >
 						<i class="fa-solid fa-bars"></i>
 					</div>
 					<div class="top-panel__exchange">
@@ -123,6 +126,12 @@
 							<div class="header__movement minus">-0.52%</div>
 						</div>
 					</div>
+                    <div class="top-panel__balance-mobile">
+                        <div>
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
 					<div class="top-panel__balance">
 						<div class="balance__title">
 							<i class="fab fa-bitcoin"></i>
@@ -198,16 +207,14 @@
 
 									<li class="user__dropdown-list">
 										<a href="signalhistory.html" class="user__dropdown-link">
-											<i class="fab fa-battle-net"></i>
+											<i class="fa-solid fa-user-group"></i>
 											<div>Signal History</div>
 										</a>
 									</li>
 
 									<li class="user__dropdown-list">
 										<a href="subscriptions.html" class="user__dropdown-link">
-											<i
-												class="fa-solid fa-user-group"
-											></i>
+											<i class="fa-solid fa-wallet"></i>
 											<div>Subscription</div>
 										</a>
 									</li>
@@ -229,7 +236,11 @@
 					</div>
 				</div>
 				<div class="page__main page__wrapper">
-					<h1>Dashboard</h1>
+                    
+
+                   H3h3
+                
+
 				</div>
 				<div class="page__footer page__wrapper">
                     <div class="page__footer__logo-list">

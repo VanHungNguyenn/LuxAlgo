@@ -2448,6 +2448,125 @@ body {
     width: 100%;
   }
 }
+.signalhistory {
+  display: flex;
+  flex-direction: column;
+}
+
+.signalhistory__statictis {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.signalhistory__statictis-item {
+  width: calc(20% - 1rem);
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.signalhistory__statictis-item-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.signalhistory__statictis-item-value {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.signalhistory__statictis-text-green {
+  color: #00c853;
+}
+.signalhistory__statictis-text-red {
+  color: #ff5252;
+}
+
+.content {
+  color: black;
+  font-size: 2rem;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+.dataTables_length {
+  font-size: 2rem;
+}
+
+.dataTables_length select {
+  font-size: 2rem;
+}
+
+.pagination .page-item {
+  margin: 0 0.5rem;
+}
+
+.page-item.active .page-link {
+  background-color: #4f9994;
+}
+
+.pagination .page-item .page-link {
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  background-color: red;
+}
+.pagination .page-item .page-link:hover, .pagination .page-item .page-link:focus, .pagination .page-item .page-link:active {
+  background-color: #00a59a;
+}
+
+.content td {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+.content th {
+  text-align: center;
+}
+
+.content .row:first-child {
+  margin: 2rem 0;
+}
+
+.content .dataTables_filter label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .dataTables_filter label .form-control {
+  width: 100%;
+  height: 3rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+}
+
+.content .table-responsive > .dataTables_wrapper > .row {
+  margin: 2rem;
+}
+
+.content .dataTables_wrapper .dataTables_info {
+  padding-top: 0;
+}
+
+.content div.table-responsive > div.dataTables_wrapper > div.row > div[class^=col-]:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.content table.table-bordered.dataTable thead tr {
+  background-color: #00a59a;
+}
+
 @media screen and (max-width: 1099px) {
   /* start of desktop styles */
 }
