@@ -167,3 +167,8 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$('#tableTrading').DataTable({})
 })
+
+// Table dashboard
+$(document).ready(function () {
+	$('#tableDashboard').DataTable({})
+})
