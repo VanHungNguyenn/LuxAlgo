@@ -1682,6 +1682,10 @@ body {
   justify-content: flex-start;
   width: 100%;
 }
+.sidebar__logo a {
+  width: 12rem;
+  height: auto;
+}
 .sidebar__links {
   margin-top: 5rem;
   display: flex;
@@ -2507,6 +2511,7 @@ body {
   font-size: 1.4rem;
   height: 30rem;
   overflow-y: scroll;
+  width: 100%;
 }
 .signalhistory__daily-table th,
 .signalhistory__daily-table td {

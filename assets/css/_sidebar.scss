@@ -24,6 +24,11 @@
 		align-items: center;
 		justify-content: flex-start;
 		width: 100%;
+
+		a {
+			width: 12rem;
+			height: auto;
+		}
 	}
 
 	&__links {
