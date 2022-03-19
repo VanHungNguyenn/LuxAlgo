@@ -2456,18 +2456,31 @@ body {
 .signalhistory {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+.signalhistory__top {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+.signalhistory__left, .signalhistory__right {
+  width: calc(50% - 1rem);
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: 0.5rem;
 }
 
 .signalhistory__statictis {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 4rem;
 }
 .signalhistory__statictis-item {
-  width: calc(20% - 1rem);
-  min-width: 18rem;
+  width: calc(50% - 1rem);
   margin-right: 0.5rem;
   margin-left: 0.5rem;
   background-color: white;
@@ -2476,16 +2489,16 @@ body {
   flex-direction: column;
   border: 1px solid #ccc;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
   margin-top: 1rem;
 }
 .signalhistory__statictis-item-title {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 .signalhistory__statictis-item-value {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -2500,7 +2513,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 5rem;
+  justify-content: space-between;
 }
 .signalhistory__daily-title {
   font-size: 1.7rem;
@@ -2509,9 +2522,9 @@ body {
 }
 .signalhistory__daily-table {
   font-size: 1.4rem;
-  height: 30rem;
   overflow-y: scroll;
   width: 100%;
+  height: 38rem;
 }
 .signalhistory__daily-table th,
 .signalhistory__daily-table td {
@@ -2610,6 +2623,26 @@ td {
   border-color: #00a59a;
 }
 
+@media screen and (max-width: 767px) {
+  .signalhistory__top {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  .signalhistory__left,
+.signalhistory__right {
+    width: 100%;
+  }
+
+  .signalhistory__right {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 479px) {
+  .signalhistory__statictis-item-title {
+    font-size: 1.2rem;
+  }
+}
 .dashboard {
   display: flex;
   flex-direction: column;
