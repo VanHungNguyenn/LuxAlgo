@@ -330,8 +330,10 @@ body {
   }
 }
 .banner {
-  background: #4449c1;
-  background: linear-gradient(139deg, #4449c1 0%, black 50%, #5a2a8f 100%);
+  background: url("../images/backgr.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 100vh;
   overflow: hidden;
   z-index: 1000;
