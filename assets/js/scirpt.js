@@ -172,3 +172,14 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$('#tableDashboard').DataTable({})
 })
+
+$(document).ready(function () {
+	$('#tableBillingHistory').DataTable({
+		paging: false,
+		lengthChange: false,
+		searching: false,
+		info: false,
+		sortable: false,
+		ordering: false,
+	})
+})

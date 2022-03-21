@@ -330,7 +330,6 @@ body {
   }
 }
 .banner {
-  background: url("../images/backgr.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2699,6 +2698,122 @@ td {
   align-items: center;
 }
 .dashboard__info-table .dataTables_wrapper .dataTables_length label {
+  margin-bottom: 1rem;
+}
+
+.account {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+}
+.account__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.account__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.account__title {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.account__wrapper {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.account__plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.account__plan-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.account__plan-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.account__plan-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.7rem;
+  margin-right: 1rem;
+}
+.account__plan-card i {
+  margin-right: 1rem;
+}
+.account__plan-card div {
+  font-weight: bold;
+}
+.account-button {
+  padding: 0.5rem 1.2rem;
+  outline: none;
+  border: none;
+  background-color: #00a59a;
+  border-radius: 0.5rem;
+  color: #fff;
+  margin: 0 0.5rem;
+}
+.account-button i {
+  font-size: 1.5rem;
+}
+.account-button-outline {
+  background-color: transparent;
+  border: 1px solid #00a59a;
+  color: #00a59a;
+}
+.account-button-outline-red {
+  background-color: transparent;
+  border: 1px solid #ff5a5f;
+  color: #ff5a5f;
+}
+
+.account__billing-history {
+  font-size: 1.4rem;
+  width: 100%;
+}
+.account__billing-history th,
+.account__billing-history td {
+  padding: 0.6rem 1rem;
+  text-align: center;
+}
+.account__billing-history th {
+  background-color: #00a59a;
+}
+.account__billing-history tbody > tr > .table-green {
+  color: #00c853;
+}
+.account__billing-history tbody > tr > .table-red {
+  color: #ff5252;
+}
+.account__billing-history .dataTables_filter label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.account__billing-history .dataTables_filter label .form-control {
+  width: 100%;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  outline: none;
+}
+.account__billing-history .dataTables_wrapper > .row {
+  margin: 1rem;
+}
+.account__billing-history .dataTables_wrapper > .row {
+  display: flex;
+  align-items: center;
+}
+.account__billing-history .dataTables_wrapper .dataTables_length label {
   margin-bottom: 1rem;
 }
 

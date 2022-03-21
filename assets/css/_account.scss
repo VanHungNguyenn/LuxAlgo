@@ -1,0 +1,139 @@
+.account {
+	display: flex;
+	flex-direction: column;
+	font-size: 1.3rem;
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 2rem;
+	}
+
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		margin-bottom: 1rem;
+	}
+
+	&__title {
+		font-size: 1.7rem;
+		font-weight: 700;
+	}
+
+	&__wrapper {
+		border: 1px solid #ccc;
+		padding: 1rem;
+		border-radius: 1rem;
+	}
+
+	&__plan {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__plan-title {
+		font-size: 1.6rem;
+		font-weight: 700;
+		line-height: 1.5;
+	}
+
+	&__plan-right {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	&__plan-card {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		font-size: 1.7rem;
+		margin-right: 1rem;
+
+		i {
+			margin-right: 1rem;
+		}
+
+		div {
+			font-weight: bold;
+		}
+	}
+
+	&-button {
+		padding: 0.5rem 1.2rem;
+		outline: none;
+		border: none;
+		background-color: $secondary-color;
+		border-radius: 0.5rem;
+		color: #fff;
+		margin: 0 0.5rem;
+
+		i {
+			font-size: 1.5rem;
+		}
+
+		&-outline {
+			background-color: transparent;
+			border: 1px solid $secondary-color;
+			color: $secondary-color;
+		}
+
+		&-outline-red {
+			background-color: transparent;
+			border: 1px solid #ff5a5f;
+			color: #ff5a5f;
+		}
+	}
+}
+
+.account__billing-history {
+	font-size: 1.4rem;
+	width: 100%;
+
+	th,
+	td {
+		padding: 0.6rem 1rem;
+		text-align: center;
+	}
+
+	th {
+		background-color: $secondary-color;
+	}
+
+	tbody > tr > .table-green {
+		color: #00c853;
+	}
+
+	tbody > tr > .table-red {
+		color: #ff5252;
+	}
+
+	.dataTables_filter label {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.form-control {
+			width: 100%;
+			font-size: 1.2rem;
+			border-radius: 1rem;
+			outline: none;
+		}
+	}
+
+	.dataTables_wrapper > .row {
+		margin: 1rem;
+	}
+
+	.dataTables_wrapper > .row {
+		display: flex;
+		align-items: center;
+	}
+
+	.dataTables_wrapper .dataTables_length label {
+		margin-bottom: 1rem;
+	}
+}
