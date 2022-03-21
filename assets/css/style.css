@@ -2704,7 +2704,7 @@ td {
 .account {
   display: flex;
   flex-direction: column;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 .account__item {
   display: flex;
@@ -2761,7 +2761,7 @@ td {
   background-color: #00a59a;
   border-radius: 0.5rem;
   color: #fff;
-  margin: 0 0.5rem;
+  margin: 0.5rem 0.5rem;
 }
 .account-button i {
   font-size: 1.5rem;
@@ -2783,11 +2783,13 @@ td {
 }
 .account__billing-history th,
 .account__billing-history td {
-  padding: 0.6rem 1rem;
+  padding: 0.2rem 0.5rem;
   text-align: center;
+  vertical-align: middle;
 }
 .account__billing-history th {
   background-color: #00a59a;
+  font-weight: bold;
 }
 .account__billing-history tbody > tr > .table-green {
   color: #00c853;
@@ -2817,6 +2819,27 @@ td {
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 991px) {
+  /* start of large tablet styles */
+}
+@media screen and (max-width: 767px) {
+  .account__plan {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .account__plan-left {
+    margin-bottom: 1rem;
+  }
+
+  .account__plan-right {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 479px) {
+  /* start of phone styles */
+}
 @media screen and (max-width: 1099px) {
   /* start of desktop styles */
 }
