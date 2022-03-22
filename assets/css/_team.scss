@@ -1,0 +1,84 @@
+.team {
+	color: $black-color;
+	margin-top: 6rem;
+	margin-bottom: 6rem;
+	font-size: 1.8rem;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__content,
+	&__image {
+		width: calc(50% - 1rem);
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		padding: 4rem 3rem;
+	}
+
+	&__title {
+		font-size: 5rem;
+		font-weight: 700;
+		margin-bottom: 2.5rem;
+		color: rgb(84, 89, 238);
+		color: linear-gradient(
+			139deg,
+			rgba(84, 89, 238, 1) 0%,
+			rgba(87, 88, 238, 1) 50%,
+			rgba(134, 75, 238, 1) 100%
+		);
+	}
+
+	&__desc p {
+		font-size: 1.8rem;
+		line-height: 1.4;
+		font-weight: 500;
+		margin-bottom: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 1099px) {
+	.team__container {
+		flex-direction: column;
+	}
+
+	.team__content,
+	.team__image {
+		width: 100%;
+	}
+
+	.team__image img {
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	/* start of large tablet styles */
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 479px) {
+	.team {
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+	}
+
+	.team__content {
+		padding: 1rem 2rem;
+	}
+
+	.team__title {
+		font-size: 3.5rem;
+	}
+
+	.team__desc p {
+		font-size: 1.5rem;
+	}
+}
