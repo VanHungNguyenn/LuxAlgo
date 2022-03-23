@@ -205,6 +205,23 @@ body {
 	font-size: 1.3rem;
 }
 
+.form-group {
+	margin-bottom: 2rem;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.form-message {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	color: #ff0000;
+}
+
+.invalid input {
+	border-color: #ff0000;
+}
+
 @media screen and (max-width: 1099px) {
 	html {
 		font-size: 60%;

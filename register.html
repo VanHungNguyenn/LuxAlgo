@@ -88,8 +88,8 @@
             <p class="register__or">or fill out the form below</p>
         </div>
         <div class="register__form">
-            <form action="">
-                <div class="register__form-group">
+            <form action="" id="register-form">
+                <div class="form-group">
                     <label for="email" class="register__form-label">
                         Email
                     </label>
@@ -98,9 +98,11 @@
                         name="email"
                         id="email"
                         class="register__form-input"
+						rules="required|email"
                     />
+					<span class="form-message"></span>
                 </div>
-                <div class="register__form-group">
+                <div class="form-group">
                     <label for="password" class="register__form-label">
                         Password
                     </label>
@@ -109,9 +111,11 @@
                         name="password"
                         id="password"
                         class="register__form-input"
+						rules="required|min:6"
                     />
+					<span class="form-message"></span>
                 </div>
-                <div class="register__form-group">
+                <div class="form-group">
                     <label for="rpassword" class="register__form-label">
                         Repeat Password
                     </label>
@@ -120,7 +124,9 @@
                         name="rpassword"
                         id="rpassword"
                         class="register__form-input"
+						rules="required|match"
                     />
+					<span class="form-message"></span>
                 </div>
                 
                 <div class="register__form-submit">
@@ -228,8 +234,10 @@
 			</div>
 		</section>
 		<!-- javascript -->
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 		<!-- Swiper JS -->
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-		<script src="assets/js/scirpt.js"></script>
+		<script src="assets/js/validator.js"></script>
+		<script src="assets/js/script.js"></script>
 	</body>
 </html>

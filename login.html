@@ -91,8 +91,8 @@
 					</p>
 				</div>
 				<div class="login__form">
-					<form action="">
-						<div class="login__form-group">
+					<form action="" id="login-form">
+						<div class="form-group">
 							<label for="email" class="login__form-label">
 								Email
 							</label>
@@ -101,10 +101,11 @@
 								name="email"
 								id="email"
 								class="login__form-input"
-    							required
+    							rules="required|email"
 							/>
+							<span class="form-message"></span>
 						</div>
-						<div class="login__form-group">
+						<div class="form-group">
 							<label for="password" class="login__form-label">
 								Password
 							</label>
@@ -113,8 +114,9 @@
 								name="password"
 								id="password"
 								class="login__form-input"
-								required
+								rules="required|min:6"
 							/>
+							<span class="form-message"></span>
 						</div>
 						<div class="login__form-check">
 							<input
@@ -232,8 +234,10 @@
 			</div>
 		</section>
 		<!-- javascript -->
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 		<!-- Swiper JS -->
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-		<script src="assets/js/scirpt.js"></script>
+		<script src="assets/js/validator.js"></script>
+		<script src="assets/js/script.js"></script>
 	</body>
 </html>

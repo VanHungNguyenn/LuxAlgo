@@ -155,6 +155,23 @@ body {
   font-size: 1.3rem;
 }
 
+.form-group {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.form-message {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #ff0000;
+}
+
+.invalid input {
+  border-color: #ff0000;
+}
+
 @media screen and (max-width: 1099px) {
   html {
     font-size: 60%;
@@ -1675,12 +1692,6 @@ body {
 .login__form {
   width: 100%;
 }
-.login__form-group {
-  margin-bottom: 2rem;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
 .login__form-label {
   font-size: 1.8rem;
   font-weight: 600;
@@ -1807,12 +1818,6 @@ body {
 }
 .register__form {
   width: 100%;
-}
-.register__form-group {
-  margin-bottom: 2rem;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
 }
 .register__form-label {
   font-size: 1.8rem;
