@@ -54,6 +54,15 @@ body {
 	color: $white-color;
 }
 
+table {
+	font-size: 1.4rem;
+}
+
+th {
+	background-color: $secondary-color;
+	font-weight: bold;
+}
+
 // 1340px + 20px + 20px
 .wrapper {
 	max-width: 1370px;

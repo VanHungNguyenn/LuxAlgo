@@ -41,6 +41,15 @@ body {
   color: #fff;
 }
 
+table {
+  font-size: 1.4rem;
+}
+
+th {
+  background-color: #00a59a;
+  font-weight: bold;
+}
+
 .wrapper {
   max-width: 1370px;
   margin: 0 auto;
