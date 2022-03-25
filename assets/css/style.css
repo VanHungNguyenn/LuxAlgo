@@ -3001,6 +3001,25 @@ td {
   padding: 1rem;
   border-radius: 1rem;
 }
+.account__unlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  background: #008ed3;
+  background: radial-gradient(circle, #008ed3 0%, #00a59a 50%, #008ed3 100%);
+}
+.account__unlock-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.account__unlock-subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
 .account__plan {
   display: flex;
   align-items: center;
