@@ -63,7 +63,8 @@ document.addEventListener('resize', () => {
 document.addEventListener('click', (e) => {
 	if (
 		!e.target.closest('.top-panel__button') &&
-		!e.target.closest('.sidebar')
+		!e.target.closest('.sidebar') &&
+		sidebar
 	) {
 		sidebar.classList.remove('active')
 		overlay.style.display = 'none'
@@ -102,13 +103,16 @@ function hideMenu() {
 // user__dropdown
 const topPanelUserInfo = document.querySelector('.top-panel__user-info')
 const userDropdown = document.querySelector('.user__dropdown')
-topPanelUserInfo.addEventListener('click', () => {
-	userDropdown.classList.toggle('active')
-})
+
+if (topPanelUserInfo) {
+	topPanelUserInfo.addEventListener('click', () => {
+		userDropdown.classList.toggle('active')
+	})
+}
 
 // click outside of user__dropdown to hide it
 document.addEventListener('click', (e) => {
-	if (!e.target.closest('.top-panel__user-right')) {
+	if (!e.target.closest('.top-panel__user-right') && userDropdown) {
 		userDropdown.classList.remove('active')
 	}
 })

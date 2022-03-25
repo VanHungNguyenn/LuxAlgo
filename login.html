@@ -44,7 +44,7 @@
 				<div class="header__menu" id="header__menu">
 					<ul class="header__menu-list">
 						<a href="index.html" class="header__logo-mobile">
-							<img src="assets/images/logo.svg" alt="Lux Algo" />
+							<img src="assets/images/logo.svg" alt="SYSTrading" />
 						</a>
 						<li class="header__menu-item">
 							<a href="#" class="header__menu-link">Resources</a>
@@ -59,7 +59,7 @@
 								target="_blank"
 								class="header__menu-link"
 							>
-								<i class="fa-brands fa-discord"></i> Community
+								<i class="fa-brands fa-telegram"></i> Community
 							</a>
 						</li>
 					
@@ -91,8 +91,8 @@
 					</p>
 				</div>
 				<div class="login__form">
-					<form action="">
-						<div class="login__form-group">
+					<form action="" id="login-form">
+						<div class="form-group">
 							<label for="email" class="login__form-label">
 								Email
 							</label>
@@ -101,10 +101,11 @@
 								name="email"
 								id="email"
 								class="login__form-input"
-    							required
+    							rules="required|email"
 							/>
+							<span class="form-message"></span>
 						</div>
-						<div class="login__form-group">
+						<div class="form-group">
 							<label for="password" class="login__form-label">
 								Password
 							</label>
@@ -113,8 +114,9 @@
 								name="password"
 								id="password"
 								class="login__form-input"
-								required
+								rules="required|min:6"
 							/>
+							<span class="form-message"></span>
 						</div>
 						<div class="login__form-check">
 							<input
@@ -127,6 +129,7 @@
 								Remember me
 							</label>
 						</div>
+						<div id="captcha-box"></div>
 						<div class="login__form-submit">
 							<button class="login__form-button">Login</button>
 							<!-- forgot password -->
@@ -198,7 +201,7 @@
 							<i class="fab fa-youtube"></i>
 						</a>
 						<a href="#" class="footer__social">
-							<i class="fab fa-instagram"></i>
+							<i class="fab fa-telegram"></i>
 						</a>
 					</div>
 				</div>
@@ -216,7 +219,7 @@
 					be construed as financial advice. You must be aware of the
 					risks and be willing to bear any level of risk to invest in
 					financial markets. Past performance is not necessarily
-					indicative of future results. Lux Algo and all individuals
+					indicative of future results. SYSTrading and all individuals
 					associated assume no responsibility for your trading results
 					or investments.
 				</div>
@@ -232,8 +235,11 @@
 			</div>
 		</section>
 		<!-- javascript -->
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 		<!-- Swiper JS -->
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-		<script src="assets/js/scirpt.js"></script>
+		<script src="assets/js/validator.js"></script>
+		<script src="gt.js"></script>
+		<script src="assets/js/script.js"></script>
 	</body>
 </html>

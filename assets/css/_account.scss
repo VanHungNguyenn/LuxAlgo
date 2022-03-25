@@ -28,6 +28,35 @@
 		border-radius: 1rem;
 	}
 
+	&__unlock {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		margin-bottom: 1rem;
+
+		background: rgb(0, 142, 211);
+		background: radial-gradient(
+			circle,
+			rgba(0, 142, 211, 1) 0%,
+			rgba(0, 165, 154, 1) 50%,
+			rgba(0, 142, 211, 1) 100%
+		);
+
+		&-title {
+			font-size: 1.7rem;
+			font-weight: 700;
+			margin-bottom: 1rem;
+		}
+
+		&-subtitle {
+			font-size: 1.4rem;
+			font-weight: 400;
+			margin-bottom: 1rem;
+		}
+	}
+
 	&__plan {
 		display: flex;
 		align-items: center;
