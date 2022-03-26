@@ -1,0 +1,29 @@
+.gallery {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	background-color: #f4f4f4;
+	color: $black-color;
+}
+
+.gallery__title {
+	font-size: 5rem;
+	text-align: center;
+	font-weight: bold;
+	color: #5459ee;
+	color: linear-gradient(139deg, #5459ee 0%, #5758ee 50%, #864bee 100%);
+	margin-bottom: 3rem;
+}
+
+.gallery__slider {
+	width: 90rem;
+	margin: 0 auto;
+}
+
+.gallery__box img {
+	object-fit: contain;
+	border-radius: 1rem;
+	position: relative;
+	box-shadow: rgb(246 243 42) 0px 5px 10px 0px,
+		rgb(255 255 255 / 65%) 0px 2px 4px 0px,
+		rgb(255 255 255 / 5%) 0px 0px 0px 1px inset;
+}

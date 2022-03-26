@@ -870,6 +870,34 @@ th {
     font-size: 1.5rem;
   }
 }
+.gallery {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: #f4f4f4;
+  color: #0c0c0c;
+}
+
+.gallery__title {
+  font-size: 5rem;
+  text-align: center;
+  font-weight: bold;
+  color: #5459ee;
+  color: linear-gradient(139deg, #5459ee 0%, #5758ee 50%, #864bee 100%);
+  margin-bottom: 3rem;
+}
+
+.gallery__slider {
+  width: 90rem;
+  margin: 0 auto;
+}
+
+.gallery__box img {
+  object-fit: contain;
+  border-radius: 1rem;
+  position: relative;
+  box-shadow: #f6f32a 0px 5px 10px 0px, rgba(255, 255, 255, 0.65) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
 .benefit {
   color: #0c0c0c;
   margin-top: 6rem;

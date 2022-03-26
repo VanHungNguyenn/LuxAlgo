@@ -38,6 +38,36 @@ var swiper = new Swiper('.mySwiper', {
 	},
 })
 
+var gallerySwiper = new Swiper('.gallerySwiper', {
+	slidesPerView: 3,
+	spaceBetween: 10,
+	slidesPerGroup: 1,
+	loop: true,
+	loopFillGroupWithBlank: true,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	autoplay: {
+		delay: 3000,
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 20,
+		},
+
+		640: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+		},
+	},
+})
+
 // show and hide sidebar
 let sidebar = document.querySelector('.sidebar')
 let buttonSidebar = document.querySelector('.top-panel__button')
