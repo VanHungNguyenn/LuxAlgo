@@ -873,8 +873,8 @@ th {
 .gallery {
   padding-top: 10rem;
   padding-bottom: 10rem;
-  background-color: #f4f4f4;
-  color: #0c0c0c;
+  background-color: #0c0c0c;
+  color: #fff;
 }
 
 .gallery__title {
@@ -896,6 +896,38 @@ th {
   border-radius: 1rem;
   position: relative;
   box-shadow: #f6f32a 0px 5px 10px 0px, rgba(255, 255, 255, 0.65) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.gallery-tutorial {
+  max-width: 90rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.gallery-tutorial__title {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.gallery-tutorial__item {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.gallery-tutorial__item span {
+  text-decoration: underline;
+}
+.gallery-tutorial__highlight-green {
+  color: #00ff68;
+  font-weight: bold;
+}
+.gallery-tutorial__highlight-blue {
+  color: #00b4ff;
+  font-weight: bold;
+}
+.gallery-tutorial__highlight-yellow {
+  color: #ffd800;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {

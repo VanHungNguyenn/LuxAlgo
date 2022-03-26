@@ -1,8 +1,8 @@
 .gallery {
 	padding-top: 10rem;
 	padding-bottom: 10rem;
-	background-color: #f4f4f4;
-	color: $black-color;
+	background-color: $black-color;
+	color: $white-color;
 }
 
 .gallery__title {
@@ -26,6 +26,45 @@
 	box-shadow: rgb(246 243 42) 0px 5px 10px 0px,
 		rgb(255 255 255 / 65%) 0px 2px 4px 0px,
 		rgb(255 255 255 / 5%) 0px 0px 0px 1px inset;
+}
+
+.gallery-tutorial {
+	max-width: 90rem;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+
+	&__title {
+		font-size: 2.4rem;
+		text-align: center;
+		font-weight: bold;
+
+		margin-bottom: 2rem;
+	}
+
+	&__item {
+		font-size: 1.6rem;
+		margin-bottom: 1rem;
+
+		span {
+			text-decoration: underline;
+		}
+	}
+
+	&__highlight-green {
+		color: #00ff68;
+		font-weight: bold;
+	}
+
+	&__highlight-blue {
+		color: #00b4ff;
+		font-weight: bold;
+	}
+
+	&__highlight-yellow {
+		color: #ffd800;
+		font-weight: bold;
+	}
 }
 
 @media screen and (max-width: 767px) {
