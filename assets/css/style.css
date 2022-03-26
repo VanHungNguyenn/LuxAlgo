@@ -887,7 +887,7 @@ th {
 }
 
 .gallery__slider {
-  width: 90rem;
+  max-width: 90rem;
   margin: 0 auto;
 }
 
@@ -898,6 +898,21 @@ th {
   box-shadow: #f6f32a 0px 5px 10px 0px, rgba(255, 255, 255, 0.65) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 
+@media screen and (max-width: 767px) {
+  .gallery {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .gallery__title {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 479px) {
+  .gallery__title {
+    font-size: 3rem;
+  }
+}
 .benefit {
   color: #0c0c0c;
   margin-top: 6rem;

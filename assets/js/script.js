@@ -56,12 +56,17 @@ var gallerySwiper = new Swiper('.gallerySwiper', {
 		delay: 3000,
 	},
 	breakpoints: {
-		320: {
+		200: {
 			slidesPerView: 1,
 			spaceBetween: 20,
 		},
 
-		640: {
+		479: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+
+		767: {
 			slidesPerView: 3,
 			spaceBetween: 20,
 		},

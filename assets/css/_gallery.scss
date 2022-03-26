@@ -15,7 +15,7 @@
 }
 
 .gallery__slider {
-	width: 90rem;
+	max-width: 90rem;
 	margin: 0 auto;
 }
 
@@ -26,4 +26,21 @@
 	box-shadow: rgb(246 243 42) 0px 5px 10px 0px,
 		rgb(255 255 255 / 65%) 0px 2px 4px 0px,
 		rgb(255 255 255 / 5%) 0px 0px 0px 1px inset;
+}
+
+@media screen and (max-width: 767px) {
+	.gallery {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+
+	.gallery__title {
+		font-size: 3.5rem;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.gallery__title {
+		font-size: 3rem;
+	}
 }
