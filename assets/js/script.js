@@ -60,7 +60,6 @@ var gallerySwiper = new Swiper('.gallerySwiper', {
 			slidesPerView: 1,
 			spaceBetween: 20,
 		},
-
 		479: {
 			slidesPerView: 2,
 			spaceBetween: 20,

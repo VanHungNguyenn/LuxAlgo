@@ -231,6 +231,14 @@ th {
 	border-color: #ff0000;
 }
 
+.telegram {
+	position: fixed;
+	bottom: 3rem;
+	right: 3rem;
+	width: 5rem;
+	cursor: pointer;
+}
+
 @media screen and (max-width: 1099px) {
 	html {
 		font-size: 60%;
