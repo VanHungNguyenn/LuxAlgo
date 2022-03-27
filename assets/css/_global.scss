@@ -1,7 +1,7 @@
 $white-color: #fff;
 $black-color: #0c0c0c;
 $primary-color: #535aee;
-$green-color: #07bf60;
+$green-color: #00a59a;
 $secondary-color: #00a59a;
 $text-color-dashboard: #2f4050;
 $background-color-dashboard: #f7f7f9;
@@ -11,9 +11,15 @@ $width-sidebar: 23.2rem;
 $height-header: 7rem;
 $height-footer: 5rem;
 
+body {
+	// font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'IBM Plex Sans', sans-serif;
+	line-height: 1.2;
+	color: $white-color;
+}
+
 html {
 	font-size: 62.5%;
-	// overflow-x: hidden;
 	scroll-behavior: smooth;
 }
 
@@ -46,12 +52,6 @@ a {
 	bottom: 0;
 	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 2;
-}
-
-body {
-	font-family: 'Source Sans Pro', sans-serif;
-	line-height: 1.2;
-	color: $white-color;
 }
 
 table {

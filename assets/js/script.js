@@ -1,9 +1,9 @@
 // Sticky navbar
 $(window).on('scroll', function () {
 	if ($(window).scrollTop()) {
-		$('header').addClass('black')
+		$('header').addClass('white')
 	} else {
-		$('header').removeClass('black')
+		$('header').removeClass('white')
 	}
 })
 

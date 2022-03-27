@@ -1,22 +1,11 @@
 .banner {
-	// background: rgb(68, 73, 193);
-	// background: linear-gradient(
-	// 	139deg,
-	// 	rgba(68, 73, 193, 1) 0%,
-	// 	rgba(0, 0, 0, 1) 50%,
-	// 	rgba(90, 42, 143, 1) 100%
-	// );
-
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-
 	min-height: 100vh;
 	overflow: hidden;
 	z-index: 1000;
 	display: flex;
 	align-items: center;
 	padding-top: 5rem;
+	color: $black-color;
 
 	&__container {
 		position: relative;

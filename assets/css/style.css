@@ -1,3 +1,9 @@
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  line-height: 1.2;
+  color: #fff;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -32,12 +38,6 @@ a {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
-}
-
-body {
-  font-family: "Source Sans Pro", sans-serif;
-  line-height: 1.2;
-  color: #fff;
 }
 
 table {
@@ -77,7 +77,7 @@ th {
   cursor: pointer;
 }
 .button--green {
-  background: #07bf60;
+  background: #00a59a;
 }
 .button--secondary {
   background: #00a59a;
@@ -242,21 +242,22 @@ th {
     font-size: 1.5rem;
   }
 }
-.header.black {
-  background-color: #0c0c0c;
+.header.white {
+  background-color: #fff;
 }
 
 .header {
   height: 66px;
-  background-color: transparent;
+  background-color: #fff;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 }
 .header__black {
-  background-color: #0c0c0c;
+  background-color: #fff;
 }
 .header__container {
   display: flex;
@@ -282,7 +283,7 @@ th {
   font-size: 1.6rem;
 }
 .header__menu-link {
-  color: #fff;
+  color: #0c0c0c;
   font-weight: 700;
 }
 .header__menu-link:hover {
@@ -299,6 +300,7 @@ th {
   cursor: pointer;
   border-radius: 0.8rem;
   font-size: 3rem;
+  color: #0c0c0c;
 }
 .header__language:hover {
   background-color: #535aee;
@@ -358,21 +360,19 @@ th {
     right: 2rem;
   }
   .header__button {
-    background-color: #07bf60;
+    background-color: #00a59a;
     border: 1px solid transparent;
     padding: 1rem 5rem;
   }
 }
 .banner {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   min-height: 100vh;
   overflow: hidden;
   z-index: 1000;
   display: flex;
   align-items: center;
   padding-top: 5rem;
+  color: #0c0c0c;
 }
 .banner__container {
   position: relative;
@@ -832,7 +832,7 @@ th {
 .review__title {
   width: 70rem;
   font-size: 6.1rem;
-  color: #07bf60;
+  color: #00a59a;
   font-weight: 700;
   margin: 0 auto;
   text-align: center;
@@ -890,7 +890,7 @@ th {
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #07bf60;
+  color: #00a59a;
 }
 
 @media screen and (max-width: 1099px) {
@@ -987,7 +987,7 @@ th {
   margin-bottom: 1rem;
 }
 .pricing__saving-green {
-  color: #07bf60;
+  color: #00a59a;
 }
 .pricing__button-item {
   margin-bottom: 5rem;
@@ -1040,7 +1040,7 @@ th {
 .pricing__checkout-advantage i {
   font-size: 2rem;
   margin-right: 1rem;
-  color: #07bf60;
+  color: #fff;
 }
 .pricing__logo {
   display: flex;
