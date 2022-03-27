@@ -1,7 +1,7 @@
 .discord {
 	padding-top: 10rem;
 	padding-bottom: 18rem;
-	background: linear-gradient(to bottom right, #2646b1 0%, #8952e4 94%);
+	background-color: $secondary-color;
 
 	&__container {
 		text-align: center;
@@ -37,14 +37,21 @@
 
 	&__button {
 		background: $white-color;
-		color: $primary-color;
 		padding: 2rem 5rem;
 		border: 1px solid transparent;
 
+		a {
+			color: $secondary-color;
+		}
+
 		&:hover {
-			background-color: transparent;
 			color: $white-color;
+			background-color: transparent;
 			border: 1px solid;
+
+			a {
+				color: $white-color;
+			}
 		}
 	}
 }
