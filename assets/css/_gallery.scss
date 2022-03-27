@@ -1,7 +1,7 @@
 .gallery {
 	padding-top: 10rem;
 	padding-bottom: 10rem;
-	background-color: $black-color;
+	background-color: $secondary-color;
 	color: $white-color;
 }
 
@@ -9,7 +9,7 @@
 	font-size: 5rem;
 	text-align: center;
 	font-weight: bold;
-	color: #5459ee;
+	color: $white-color;
 	color: linear-gradient(139deg, #5459ee 0%, #5758ee 50%, #864bee 100%);
 	margin-bottom: 3rem;
 }

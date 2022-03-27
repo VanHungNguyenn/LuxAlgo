@@ -1,7 +1,7 @@
 .pricing {
 	padding-top: 8rem;
 	padding-bottom: 10rem;
-	background-color: $green-color;
+	background-color: $secondary-color;
 
 	&__intro {
 		text-align: center;
@@ -152,7 +152,7 @@
 			i {
 				font-size: 2rem;
 				margin-right: 1rem;
-				color: #535aee;
+				color: $green-color;
 			}
 		}
 	}

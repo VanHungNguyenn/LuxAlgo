@@ -557,7 +557,7 @@ th {
   }
 }
 .process {
-  background-color: #0c0c0c;
+  background-color: #00a59a;
   color: #fff;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -575,8 +575,7 @@ th {
   font-size: 5rem;
   font-weight: 700;
   margin-bottom: 2.5rem;
-  color: #5459ee;
-  color: linear-gradient(139deg, #5459ee 0%, #5758ee 50%, #864bee 100%);
+  color: #fff;
 }
 .process__content {
   display: flex;
@@ -655,7 +654,7 @@ th {
 .gallery {
   padding-top: 10rem;
   padding-bottom: 10rem;
-  background-color: #0c0c0c;
+  background-color: #00a59a;
   color: #fff;
 }
 
@@ -663,7 +662,7 @@ th {
   font-size: 5rem;
   text-align: center;
   font-weight: bold;
-  color: #5459ee;
+  color: #fff;
   color: linear-gradient(139deg, #5459ee 0%, #5758ee 50%, #864bee 100%);
   margin-bottom: 3rem;
 }
@@ -912,7 +911,7 @@ th {
 .pricing {
   padding-top: 8rem;
   padding-bottom: 10rem;
-  background-color: #07bf60;
+  background-color: #00a59a;
 }
 .pricing__intro {
   text-align: center;
@@ -1038,7 +1037,7 @@ th {
 .pricing__checkout-advantage i {
   font-size: 2rem;
   margin-right: 1rem;
-  color: #535aee;
+  color: #07bf60;
 }
 .pricing__logo {
   display: flex;
