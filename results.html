@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SYSTrading | Advanced Trading Bots</title>
+		<!-- import Roboto font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+		<!-- import font-awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- Link Swiper's CSS -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<link rel="stylesheet" href="assets/css/reset.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="wrapper header__container">
+				<a href="index.html" class="header__logo">
+					<img src="assets/images/syslogo2.svg" alt="SYSTrading" />
+				</a>
+
+				<div class="header__menu" id="header__menu">
+					<ul class="header__menu-list">
+						<a href="index.html" class="header__logo-mobile">
+							<img src="assets/images/syslogo2.svg" alt="SYSTrading" />
+						</a>
+						<li class="header__menu-item">
+							<a href="index.html" class="header__menu-link">Home</a>
+						</li>
+
+						<li class="header__menu-item">
+							<a href="#pricing" class="header__menu-link">Pricing</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="results.html" class="header__menu-link">Results</a>
+						</li>
+						<li class="header__menu-item">
+							<a
+								href="https://t.me/SYSTradingSignals"
+								target="_blank"
+								class="header__menu-link"
+							>
+								<i class="fa-brands fa-telegram"></i> Community
+							</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="login.html" class="header__menu-link"
+								>Login / Register</a
+							>
+						</li>
+					</ul>
+					<div class="header__close" onclick="hideMenu()">
+						<i class="fas fa-times" ></i>
+					</div>
+				</div>
+				<div class="header__language">
+					<i class="fa-solid fa-globe"></i>
+				</div>
+				<div class="header__bars" onclick="showMenu()">
+					<i class="fas fa-bars" ></i>
+				</div>
+		</header>
+        <section class="results">
+            <div class="container results__container">
+                <div class="results__title">
+                    Binance Futures Reports
+                </div>
+                <div class="results__list">
+                    <div class="results__item">
+                        <div class="results__item-title">
+                            Binance Futures January 2022
+                        </div>
+                        <div class="results__item-container">
+                            <div class="results__item-percent">
+                                56%
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Signals
+                                </div>
+                                <div class="results__item-value">
+                                    96
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Wins
+                                </div>
+                                <div class="results__item-value">
+                                    54
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Losses
+                                </div>
+                                <div class="results__item-value">
+                                    42
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Total %
+                                </div>
+                                <div class="results__item-value">
+                                    1155%
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Win Rate %
+                                </div>
+                                <div class="results__item-value text--green">
+                                    56%
+                                </div>
+                            </div>
+                        </div>
+                        <a class="results__item-button button button--green">
+                            View Report
+                        </a>
+                    </div>
+                    <div class="results__item">
+                        <div class="results__item-title">
+                            Binance Futures January 2022
+                        </div>
+                        <div class="results__item-container">
+                            <div class="results__item-percent">
+                                56%
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Signals
+                                </div>
+                                <div class="results__item-value">
+                                    96
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Wins
+                                </div>
+                                <div class="results__item-value">
+                                    54
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Losses
+                                </div>
+                                <div class="results__item-value">
+                                    42
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Total %
+                                </div>
+                                <div class="results__item-value">
+                                    1155%
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Win Rate %
+                                </div>
+                                <div class="results__item-value text--green">
+                                    56%
+                                </div>
+                            </div>
+                        </div>
+                       <a class="results__item-button button button--green">
+                            View Report
+                        </a>
+                    </div>
+                    <div class="results__item">
+                        <div class="results__item-title">
+                            Binance Futures January 2022
+                        </div>
+                        <div class="results__item-container">
+                            <div class="results__item-percent">
+                                56%
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Signals
+                                </div>
+                                <div class="results__item-value">
+                                    96
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Wins
+                                </div>
+                                <div class="results__item-value">
+                                    54
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Losses
+                                </div>
+                                <div class="results__item-value">
+                                    42
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Total %
+                                </div>
+                                <div class="results__item-value">
+                                    1155%
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Win Rate %
+                                </div>
+                                <div class="results__item-value text--green">
+                                    56%
+                                </div>
+                            </div>
+                        </div>
+                       <a class="results__item-button button button--green">
+                            View Report
+                        </a>
+                    </div>
+                    <div class="results__item">
+                        <div class="results__item-title">
+                            Binance Futures January 2022
+                        </div>
+                        <div class="results__item-container">
+                            <div class="results__item-percent">
+                                56%
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Signals
+                                </div>
+                                <div class="results__item-value">
+                                    96
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Wins
+                                </div>
+                                <div class="results__item-value">
+                                    54
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Losses
+                                </div>
+                                <div class="results__item-value">
+                                    42
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Total %
+                                </div>
+                                <div class="results__item-value">
+                                    1155%
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Win Rate %
+                                </div>
+                                <div class="results__item-value text--green">
+                                    56%
+                                </div>
+                            </div>
+                        </div>
+                       <a class="results__item-button button button--green">
+                            View Report
+                        </a>
+                    </div>
+                    <div class="results__item">
+                        <div class="results__item-title">
+                            Binance Futures January 2022
+                        </div>
+                        <div class="results__item-container">
+                            <div class="results__item-percent">
+                                56%
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Signals
+                                </div>
+                                <div class="results__item-value">
+                                    96
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Wins
+                                </div>
+                                <div class="results__item-value">
+                                    54
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Losses
+                                </div>
+                                <div class="results__item-value">
+                                    42
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Total %
+                                </div>
+                                <div class="results__item-value">
+                                    1155%
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Win Rate %
+                                </div>
+                                <div class="results__item-value text--green">
+                                    56%
+                                </div>
+                            </div>
+                        </div>
+                       <a class="results__item-button button button--green">
+                            View Report
+                        </a>
+                    </div>
+                    <div class="results__item">
+                        <div class="results__item-title">
+                            Binance Futures January 2022
+                        </div>
+                        <div class="results__item-container">
+                            <div class="results__item-percent">
+                                56%
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Signals
+                                </div>
+                                <div class="results__item-value">
+                                    96
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Wins
+                                </div>
+                                <div class="results__item-value">
+                                    54
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Losses
+                                </div>
+                                <div class="results__item-value">
+                                    42
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Total %
+                                </div>
+                                <div class="results__item-value">
+                                    1155%
+                                </div>
+                            </div>
+                            <div class="results__item-content">
+                                <div class="results__item-key">
+                                    Win Rate %
+                                </div>
+                                <div class="results__item-value text--green">
+                                    56%
+                                </div>
+                            </div>
+                        </div>
+                       <a class="results__item-button button button--green">
+                            View Report
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+	
+
+	
+		<footer class="footer">
+			<div class="container footer__container">
+				<div class="footer__left">
+					<div class="footer__logo">
+						<img src="assets/images/syslogo2.svg" alt="logo" />
+					</div>
+					<div class="button button--green">Buy Now</div>
+				</div>
+				<div class="footer__center">
+					<h4 class="footer__resource">Additional Resources</h4>
+					<div class="footer__links">
+						<div class="footer__links1">
+							<a href="#" class="footer__link">
+								Affiliate Program
+							</a>
+							<a href="#" class="footer__link">
+								Manage Account
+							</a>
+							<a href="#" class="footer__link">
+								Free Indicators
+							</a>
+							<a href="#" class="footer__link">
+								Terms of Service
+							</a>
+							<a href="#" class="footer__link"> Changelog </a>
+						</div>
+						<div class="footer__links2">
+							<a href="#" class="footer__link"> Refund Policy </a>
+							<a href="#" class="footer__link"> About Us </a>
+							<a href="#" class="footer__link">
+								Privacy Policy
+							</a>
+							<a href="#" class="footer__link"> Blog </a>
+							<a href="#" class="footer__link"> Disclaimer </a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__right">
+					<h4 class="footer__resource">Contact Us</h4>
+					<div class="footer__email">support@systrading.io</div>
+					<div class="footer__socials">
+						<a href="#" class="footer__social">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="#" class="footer__social">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="#" class="footer__social">
+							<i class="fab fa-youtube"></i>
+						</a>
+						<a href="#" class="footer__social">
+							<i class="fab fa-telegram"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<section class="info">
+			<div class="container">
+				<div class="info__copyrights">
+					© 2021 SYSTrading. All rights reserved.
+				</div>
+				<div class="info__copyrights">
+					SYSTrading and all affiliated parties are not registered as
+					financial advisors. This site & the products & services Lux
+					Algo offers are for educational purposes only and should not
+					be construed as financial advice. You must be aware of the
+					risks and be willing to bear any level of risk to invest in
+					financial markets. Past performance is not necessarily
+					indicative of future results. SYSTrading and all individuals
+					associated assume no responsibility for your trading results
+					or investments.
+				</div>
+			</div>
+		</section>
+		<div class="telegram">
+			<a href="https://t.me/SYSTradingSignals">
+				<img src="./assets/images/telegram.png" alt="telegram">
+			</a>
+		</div>
+
+		<!-- javascript -->
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+		<!-- Swiper JS -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>

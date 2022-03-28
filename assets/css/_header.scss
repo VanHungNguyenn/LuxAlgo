@@ -81,10 +81,15 @@
 		padding: 1rem 1rem;
 		margin: 0 0.6rem;
 		border-radius: 0.8rem;
+		color: $black-color;
 
 		&:hover {
-			background-color: $primary-color;
+			background-color: $green-color;
 		}
+	}
+
+	&__close {
+		color: $white-color;
 	}
 }
 
@@ -122,6 +127,10 @@
 				margin-bottom: 3rem;
 				font-size: 1.8rem;
 				font-weight: 700;
+			}
+
+			&-link {
+				color: $white-color;
 			}
 		}
 
