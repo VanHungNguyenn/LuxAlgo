@@ -10,17 +10,11 @@
 		font-weight: 700;
 		text-align: center;
 		margin-bottom: 1.5rem;
-		color: rgb(84, 89, 238);
-		color: linear-gradient(
-			139deg,
-			rgba(84, 89, 238, 1) 0%,
-			rgba(87, 88, 238, 1) 50%,
-			rgba(134, 75, 238, 1) 100%
-		);
+		color: $green-color;
 	}
 
 	&__subtitle {
-		font-size: 2.4rem;
+		font-size: 2.1rem;
 		font-weight: 500;
 		text-align: center;
 		margin-bottom: 3rem;
@@ -44,14 +38,9 @@
 
 		&-icon {
 			width: 5rem;
-			font-size: 4rem;
-			color: rgb(84, 89, 238);
-			color: linear-gradient(
-				139deg,
-				rgba(84, 89, 238, 1) 0%,
-				rgba(87, 88, 238, 1) 50%,
-				rgba(134, 75, 238, 1) 100%
-			);
+			font-size: 3rem;
+
+			color: $green-color;
 		}
 
 		&-content {
@@ -62,7 +51,7 @@
 		}
 
 		&-title {
-			font-size: 3rem;
+			font-size: 2.5rem;
 			font-weight: 700;
 			margin-bottom: 1.5rem;
 		}

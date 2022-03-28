@@ -2,6 +2,7 @@
 	padding-top: 8rem;
 	padding-bottom: 10rem;
 	background-color: $secondary-color;
+	color: $black-color;
 
 	&__intro {
 		text-align: center;
@@ -71,6 +72,7 @@
 	&__newprice {
 		font-size: 4.8rem;
 		font-weight: bold;
+		color: $white-color;
 	}
 
 	&__price {
@@ -97,6 +99,7 @@
 
 	&__expired {
 		font-size: 1.4rem;
+		color: $white-color;
 
 		&-border {
 			padding: 0.4rem 2rem;
@@ -152,7 +155,7 @@
 			i {
 				font-size: 2rem;
 				margin-right: 1rem;
-				color: $white-color;
+				color: $black-color;
 			}
 		}
 	}
@@ -161,6 +164,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
+		color: $black-color;
 
 		&-item {
 			width: 7rem;

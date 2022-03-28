@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "IBM Plex Sans", sans-serif;
   line-height: 1.2;
@@ -491,6 +492,61 @@ th {
     font-size: 1.5rem;
   }
 }
+.intro {
+  color: #0c0c0c;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  font-size: 1.8rem;
+}
+.intro__container {
+  display: flex;
+  flex-direction: column;
+}
+.intro__title {
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #00a59a;
+}
+.intro__subtitle {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.intro__list {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+.intro__item {
+  width: calc(33.33% - 2.5rem);
+}
+.intro__item-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.intro__item-title:before {
+  left: 0;
+  content: "—";
+  font-size: inherit;
+  width: 13px;
+  min-width: 1.2em;
+  align-self: flex-start;
+}
+.intro__conclude {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.intro__button {
+  width: fit-content;
+  margin: 0 auto;
+}
+
 .team {
   color: #0c0c0c;
   margin-top: 6rem;
@@ -514,8 +570,7 @@ th {
   font-size: 5rem;
   font-weight: 700;
   margin-bottom: 2.5rem;
-  color: #5459ee;
-  color: linear-gradient(139deg, #5459ee 0%, #5758ee 50%, #864bee 100%);
+  color: #00a59a;
 }
 .team__desc p {
   font-size: 1.8rem;
@@ -561,7 +616,7 @@ th {
 }
 .process {
   background-color: #00a59a;
-  color: #fff;
+  color: #0c0c0c;
   padding-top: 8rem;
   padding-bottom: 8rem;
   font-size: 1.8rem;
@@ -578,7 +633,6 @@ th {
   font-size: 5rem;
   font-weight: 700;
   margin-bottom: 2.5rem;
-  color: #fff;
 }
 .process__content {
   display: flex;
@@ -658,15 +712,13 @@ th {
   padding-top: 10rem;
   padding-bottom: 10rem;
   background-color: #00a59a;
-  color: #fff;
+  color: #0c0c0c;
 }
 
 .gallery__title {
   font-size: 5rem;
   text-align: center;
   font-weight: bold;
-  color: #fff;
-  color: linear-gradient(139deg, #5459ee 0%, #5758ee 50%, #864bee 100%);
   margin-bottom: 3rem;
 }
 
@@ -740,11 +792,10 @@ th {
   font-weight: 700;
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #5459ee;
-  color: linear-gradient(139deg, #5459ee 0%, #5758ee 50%, #864bee 100%);
+  color: #00a59a;
 }
 .benefit__subtitle {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   font-weight: 500;
   text-align: center;
   margin-bottom: 3rem;
@@ -766,9 +817,8 @@ th {
 }
 .benefit__item-icon {
   width: 5rem;
-  font-size: 4rem;
-  color: #5459ee;
-  color: linear-gradient(139deg, #5459ee 0%, #5758ee 50%, #864bee 100%);
+  font-size: 3rem;
+  color: #00a59a;
 }
 .benefit__item-content {
   flex: 1;
@@ -777,7 +827,7 @@ th {
   flex-direction: column;
 }
 .benefit__item-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
@@ -915,6 +965,7 @@ th {
   padding-top: 8rem;
   padding-bottom: 10rem;
   background-color: #00a59a;
+  color: #0c0c0c;
 }
 .pricing__intro {
   text-align: center;
@@ -973,6 +1024,7 @@ th {
 .pricing__newprice {
   font-size: 4.8rem;
   font-weight: bold;
+  color: #fff;
 }
 .pricing__price {
   font-size: 2.4rem;
@@ -994,6 +1046,7 @@ th {
 }
 .pricing__expired {
   font-size: 1.4rem;
+  color: #fff;
 }
 .pricing__expired-border {
   padding: 0.4rem 2rem;
@@ -1040,12 +1093,13 @@ th {
 .pricing__checkout-advantage i {
   font-size: 2rem;
   margin-right: 1rem;
-  color: #fff;
+  color: #0c0c0c;
 }
 .pricing__logo {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  color: #0c0c0c;
 }
 .pricing__logo-item {
   width: 7rem;
