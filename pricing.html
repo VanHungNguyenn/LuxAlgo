@@ -6,12 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>SYSTrading | Advanced Trading Bots</title>
 		<!-- import Roboto font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 		<!-- import font-awesome -->
 		<link
 			rel="stylesheet"
@@ -35,7 +32,7 @@
 		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body>
-		<header class="header header__black">
+		<header class="header">
 			<div class="wrapper header__container">
 				<a href="index.html" class="header__logo">
 					<img src="assets/images/Artboard 2.svg" alt="SYSTrading" />
@@ -43,11 +40,11 @@
 
 				<div class="header__menu" id="header__menu">
 					<ul class="header__menu-list">
-						
+					
 						<li class="header__menu-item">
 							<a href="index.html" class="header__menu-link">Home</a>
 						</li>
-					
+
 						<li class="header__menu-item">
 							<a href="pricing.html" class="header__menu-link">Pricing</a>
 						</li>
@@ -56,14 +53,13 @@
 						</li>
 						<li class="header__menu-item">
 							<a
-								href="https://discord.com/invite/LUX"
+								href="https://t.me/SYSTradingSignals"
 								target="_blank"
 								class="header__menu-link"
 							>
 								<i class="fa-brands fa-telegram"></i> Community
 							</a>
 						</li>
-					
 						<li class="header__menu-item">
 							<a href="login.html" class="header__menu-link"
 								>Login / Register</a
@@ -81,75 +77,135 @@
 					<i class="fas fa-bars" ></i>
 				</div>
 		</header>
-
-<section class="register">
-    <div class="wrapper register__container">
-        <div class="register__header">
-            <h1 class="register__title">Register</h1>
-            <p class="register__or">or fill out the form below</p>
-        </div>
-        <div class="register__form">
-            <form action="" id="register-form">
-                <div class="form-group">
-                    <label for="email" class="register__form-label">
-                        Email
-                    </label>
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        class="register__form-input"
-						rules="required|email"
-                    />
-					<span class="form-message"></span>
-                </div>
-                <div class="form-group">
-                    <label for="password" class="register__form-label">
-                        Password
-                    </label>
-                    <input
-                        type="password"
-                        name="password"
-                        id="password"
-                        class="register__form-input"
-						rules="required|min:6"
-                    />
-					<span class="form-message"></span>
-                </div>
-                <div class="form-group">
-                    <label for="rpassword" class="register__form-label">
-                        Repeat Password
-                    </label>
-                    <input
-                        type="password"
-                        name="rpassword"
-                        id="rpassword"
-                        class="register__form-input"
-						rules="required|match"
-                    />
-					<span class="form-message"></span>
-                </div>
-                
-                <div class="register__form-submit">
-                    <button class="register__form-button">Register</button>
-                    <!-- forgot password -->
-                   
-                </div>
-            </form>
-        </div>
-        <div class="register__footer">
-            <p class="register__footer-text">
-                Already have account?
-                <a href="login.html" class="register__footer-link"
-                    >Login</a
-                >
-            </p>
-        </div>
-    </div>
-</section>
-
 		
 
+
+		
+		<section class="pricing" id="pricing">
+			<div class="wrapper">
+				<div class="pricing__intro">
+					<div class="pricing__subtitle">
+						Choose your plan with our
+					</div>
+					<div class="pricing__title">All-Inclusive Membership.</div>
+					<div class="pricing__desc">
+						See the details below & choose the perfect pricing plan
+						for you
+					</div>
+					<div class="pricing__heading">
+						Life time offer now available
+					</div>
+					<div class="button pricing__button">NEW LIFETIME DEAL</div>
+				</div>
+				<div class="pricing__package">
+					<div class="pricing__package-item">
+						<div class="pricing__package-title">Monthly</div>
+						<div class="pricing__content">
+							<div class="pricing__newprice">$67.99</div>
+							<div class="pricing__price">-</div>
+							<div class="pricing__saving">Full Price</div>
+							<div
+								class="button button--green pricing__button-item"
+							>
+								Subcribe
+							</div>
+							<div class="pricing__expired">Cancel Anytime</div>
+						</div>
+					</div>
+					<div class="pricing__package-item">
+						<div class="pricing__package-title">Quarterly</div>
+						<div class="pricing__content">
+							<div class="pricing__newprice">$143.97</div>
+							<div class="pricing__price">$203.97</div>
+							<div class="pricing__saving pricing__saving-green">
+								Save 30%
+							</div>
+							<div
+								class="button button--green pricing__button-item"
+							>
+								Subcribe
+							</div>
+							<div class="pricing__expired">Cancel Anytime</div>
+						</div>
+					</div>
+					<div class="pricing__package-item">
+						<div class="pricing__package-title">Yearly</div>
+						<div class="pricing__content">
+							<div class="pricing__newprice">$489.99</div>
+							<div class="pricing__price">$815.88</div>
+							<div class="pricing__saving pricing__saving-green">
+								Save 40%
+							</div>
+							<div
+								class="button button--green pricing__button-item"
+							>
+								Subcribe
+							</div>
+							<div
+								class="pricing__expired pricing__expired-border"
+							>
+								Pay via Coinbase
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pricing__checkout">
+					<div class="pricing__checkout-left">
+						<div class="pricing__checkout-title">
+							Safe & Secure Checkout.
+						</div>
+						<div class="pricing__checkout-desc">
+							30 day money back guarantee. Cancel anytime in
+							one-click from within your account. A link to get
+							<span>instant access</span> is emailed to you
+							directly after signing up.
+						</div>
+						<div class="pricing__logo">
+							<div class="pricing__logo-item">
+								<img src="assets/images/logo4.svg" alt="logo" />
+							</div>
+							<div class="pricing__logo-item">
+								<img src="assets/images/logo5.svg" alt="logo" />
+							</div>
+							<div class="pricing__logo-item">
+								<img src="assets/images/logo6.svg" alt="logo" />
+							</div>
+							<div class="pricing__logo-item">
+								<img src="assets/images/logo7.svg" alt="logo" />
+							</div>
+							<div class="pricing__logo-item">
+								<img src="assets/images/logo8.svg" alt="logo" />
+							</div>
+						</div>
+					</div>
+					<div class="pricing__checkout-right">
+						<div class="pricing__checkout-block">
+							<div class="pricing__checkout-advantage">
+								<i class="fas fa-check-circle"></i>
+								Premium Indicator Suite on TradingView
+							</div>
+							<div class="pricing__checkout-advantage">
+								<i class="fas fa-check-circle"></i>
+								VIP Discord Group w/ Scanners & Bots
+							</div>
+							<div class="pricing__checkout-advantage">
+								<i class="fas fa-check-circle"></i>
+								Signal Settings Optimization Experience
+							</div>
+							<div class="pricing__checkout-advantage">
+								<i class="fas fa-check-circle"></i>
+								Real-time Alerts & Non-Repaint Signals
+							</div>
+							<div class="pricing__checkout-advantage">
+								<i class="fas fa-check-circle"></i>
+								24/7 Support & Active Product Updates
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
 		<footer class="footer">
 			<div class="container footer__container">
 				<div class="footer__left">
@@ -210,10 +266,10 @@
 		<section class="info">
 			<div class="container">
 				<div class="info__copyrights">
-					© 2021 2021 SYS Trading. All rights reserved.
+					© 2021 SYSTrading. All rights reserved.
 				</div>
 				<div class="info__copyrights">
-					SYS Trading and all affiliated parties are not registered as
+					SYSTrading and all affiliated parties are not registered as
 					financial advisors. This site & the products & services Lux
 					Algo offers are for educational purposes only and should not
 					be construed as financial advice. You must be aware of the
@@ -223,15 +279,6 @@
 					associated assume no responsibility for your trading results
 					or investments.
 				</div>
-				<div class="info__writer">
-					Created By
-					<a
-						href="https://www.facebook.com/vanhung.dev"
-						target="_blank"
-					>
-						VanHungNguyen</a
-					>
-				</div>
 			</div>
 		</section>
 		<div class="telegram">
@@ -239,11 +286,11 @@
 				<img src="./assets/images/telegram.png" alt="telegram">
 			</a>
 		</div>
+
 		<!-- javascript -->
         <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 		<!-- Swiper JS -->
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-		<script src="assets/js/validator.js"></script>
 		<script src="assets/js/script.js"></script>
 	</body>
 </html>

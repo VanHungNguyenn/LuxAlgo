@@ -308,7 +308,7 @@ th {
   color: #0c0c0c;
 }
 .header__language:hover {
-  background-color: #535aee;
+  background-color: #00a59a;
 }
 .header__bars, .header__close {
   display: none;
@@ -693,8 +693,7 @@ th {
 }
 .process__desc p a {
   font-weight: bold;
-  color: #5459ee;
-  color: linear-gradient(139deg, #5459ee 0%, #5758ee 50%, #864bee 100%);
+  color: #5d0ef0;
   text-decoration: none;
 }
 .process__desc p a:hover {
@@ -1006,9 +1005,9 @@ th {
   }
 }
 .pricing {
-  padding-top: 8rem;
+  padding-top: 15rem;
   padding-bottom: 10rem;
-  background-color: #00a59a;
+  background-color: #d0cde0;
   color: #0c0c0c;
 }
 .pricing__intro {
@@ -1212,6 +1211,7 @@ th {
   color: #0c0c0c;
   padding-top: 6rem;
   padding-bottom: 10rem;
+  background-color: #00a59a;
 }
 .question__subtitle {
   font-size: 2.4rem;
@@ -1907,8 +1907,15 @@ th {
 .results__title {
   font-size: 4.8rem;
   font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.results__subtitle {
+  font-size: 2.5rem;
+  margin: 0 auto;
   margin-bottom: 5rem;
   text-align: center;
+  max-width: 70rem;
 }
 .results__list {
   display: flex;
