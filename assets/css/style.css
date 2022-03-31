@@ -1623,6 +1623,7 @@ th {
   padding-top: 16rem;
   padding-bottom: 10rem;
   color: #0c0c0c;
+  min-height: 70vh;
 }
 .login__container {
   max-width: 67.5rem;
@@ -1699,7 +1700,7 @@ th {
 .login__form-button {
   border: none;
   color: #fff;
-  background: #535aee;
+  background: #00a59a;
   outline: none;
   margin-right: 2rem;
   border-radius: 0.5rem;
@@ -1826,7 +1827,7 @@ th {
 .register__form-button {
   border: none;
   color: #fff;
-  background: #535aee;
+  background: #00a59a;
   outline: none;
   margin-right: 2rem;
   border-radius: 0.5rem;

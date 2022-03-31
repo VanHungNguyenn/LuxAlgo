@@ -2,6 +2,7 @@
 	padding-top: 16rem;
 	padding-bottom: 10rem;
 	color: $black-color;
+	min-height: 70vh;
 
 	&__container {
 		max-width: 67.5rem;
@@ -92,7 +93,7 @@
 		&-button {
 			border: none;
 			color: $white-color;
-			background: $primary-color;
+			background: $green-color;
 			outline: none;
 			margin-right: 2rem;
 			border-radius: 0.5rem;
