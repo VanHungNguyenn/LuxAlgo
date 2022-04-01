@@ -243,6 +243,40 @@ th {
 	cursor: pointer;
 }
 
+// hover .telegram show .chat-toottip
+.chat-tooltip {
+	position: fixed;
+	right: 9rem;
+	bottom: 4rem;
+
+	z-index: 3;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	border-radius: 2rem;
+	color: $black-color;
+	font-size: 1.5rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+	display: none;
+}
+
+.chat-tooltip::before {
+	content: '';
+	position: absolute;
+	right: -0.5rem;
+	width: 0;
+	height: 0;
+	border-top: 1rem solid transparent;
+	border-bottom: 1rem solid transparent;
+	border-left: 1rem solid white;
+}
+
+.telegram:hover .chat-tooltip {
+	display: block;
+}
+
 @media screen and (max-width: 1099px) {
 	html {
 		font-size: 60%;
