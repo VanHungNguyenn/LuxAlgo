@@ -22,6 +22,8 @@
 			rel="stylesheet"
 			href="https://unpkg.com/swiper/swiper-bundle.min.css"
 		/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
 			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -45,8 +47,11 @@
 							<a href="index.html" class="header__menu-link">Home</a>
 						</li>
 
-						<li class="header__menu-item">
+							<li class="header__menu-item">
 							<a href="pricing.html" class="header__menu-link">Pricing</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="blog.html" class="header__menu-link">Blog</a>
 						</li>
 						<li class="header__menu-item">
 							<a href="results.html" class="header__menu-link">Results</a>
@@ -77,133 +82,468 @@
 					<i class="fas fa-bars" ></i>
 				</div>
 		</header>
-		
-
-
-		
-		<section class="pricing" id="pricing">
-			<div class="wrapper">
-				<div class="pricing__intro">
-					<div class="pricing__subtitle">
-						Choose your plan with our
-					</div>
-					<div class="pricing__title">All-Inclusive Membership.</div>
-					<div class="pricing__desc">
-						See the details below & choose the perfect pricing plan
-						for you
-					</div>
-					<div class="pricing__heading">
-						Life time offer now available
-					</div>
-					<div class="button pricing__button">NEW LIFETIME DEAL</div>
-				</div>
-				<div class="pricing__package">
-					<div class="pricing__package-item">
-						<div class="pricing__package-title">Monthly</div>
-						<div class="pricing__content">
-							<div class="pricing__newprice">$67.99</div>
-							<div class="pricing__price">-</div>
-							<div class="pricing__saving">Full Price</div>
-							<div
-								class="button button--green pricing__button-item"
-							>
-								Subcribe
-							</div>
-							<div class="pricing__expired">Cancel Anytime</div>
+			
+		<section class="pricing " id="pricing">
+			<div class="container">
+				<div class="subscription__alert">
+					<div class="subscription__alert-title">
+						<i class="fas fa-exclamation-circle"></i>
+						<div>
+							The trial period is over, you can buy a <a href="#">subscription</a>, or stay on the free plan and continue using the service.
 						</div>
 					</div>
-					<div class="pricing__package-item">
-						<div class="pricing__package-title">Quarterly</div>
-						<div class="pricing__content">
-							<div class="pricing__newprice">$143.97</div>
-							<div class="pricing__price">$203.97</div>
-							<div class="pricing__saving pricing__saving-green">
-								Save 30%
-							</div>
-							<div
-								class="button button--green pricing__button-item"
-							>
-								Subcribe
-							</div>
-							<div class="pricing__expired">Cancel Anytime</div>
-						</div>
-					</div>
-					<div class="pricing__package-item">
-						<div class="pricing__package-title">Yearly</div>
-						<div class="pricing__content">
-							<div class="pricing__newprice">$489.99</div>
-							<div class="pricing__price">$815.88</div>
-							<div class="pricing__saving pricing__saving-green">
-								Save 40%
-							</div>
-							<div
-								class="button button--green pricing__button-item"
-							>
-								Subcribe
-							</div>
-							<div
-								class="pricing__expired pricing__expired-border"
-							>
-								Pay via Coinbase
-							</div>
-						</div>
+					<div class="subscription__alert-button">
+						<a href="#" class="button button--transparent button--small button--square">
+							Buy subscription
+						</a>
 					</div>
 				</div>
-				<div class="pricing__checkout">
-					<div class="pricing__checkout-left">
-						<div class="pricing__checkout-title">
-							Safe & Secure Checkout.
+				<div class="subscription__main">
+					<div class="subscription__main-tab">
+						<h6 class="subscription__main-tab-category">Show:</h6>
+						<div
+							class="subscription__main-tab-item month-tab active"
+							onclick="switchTab('month-tab')"
+						>
+							Monthly
 						</div>
-						<div class="pricing__checkout-desc">
-							30 day money back guarantee. Cancel anytime in
-							one-click from within your account. A link to get
-							<span>instant access</span> is emailed to you
-							directly after signing up.
-						</div>
-						<div class="pricing__logo">
-							<div class="pricing__logo-item">
-								<img src="assets/images/logo4.svg" alt="logo" />
-							</div>
-							<div class="pricing__logo-item">
-								<img src="assets/images/logo5.svg" alt="logo" />
-							</div>
-							<div class="pricing__logo-item">
-								<img src="assets/images/logo6.svg" alt="logo" />
-							</div>
-							<div class="pricing__logo-item">
-								<img src="assets/images/logo7.svg" alt="logo" />
-							</div>
-							<div class="pricing__logo-item">
-								<img src="assets/images/logo8.svg" alt="logo" />
-							</div>
+						<div
+							class="subscription__main-tab-item year-tab"
+							onclick="switchTab('year-tab')"
+						>
+							Yearly
 						</div>
 					</div>
-					<div class="pricing__checkout-right">
-						<div class="pricing__checkout-block">
-							<div class="pricing__checkout-advantage">
-								<i class="fas fa-check-circle"></i>
-								Premium Indicator Suite on TradingView
+
+					<div id="month-tab" class="subscription__tab-list">
+						<div class="subscription__item">
+							<div class="subscription__item-header">
+								<div class="subscription__item-name">Free</div>
+								<div class="subscription__item-price">$0</div>
+								<div class="subscription__item-expired">forever</div>
+								<div class="subscription__item-badge">Current plan</div>
 							</div>
-							<div class="pricing__checkout-advantage">
-								<i class="fas fa-check-circle"></i>
-								VIP Discord Group w/ Scanners & Bots
-							</div>
-							<div class="pricing__checkout-advantage">
-								<i class="fas fa-check-circle"></i>
-								Signal Settings Optimization Experience
-							</div>
-							<div class="pricing__checkout-advantage">
-								<i class="fas fa-check-circle"></i>
-								Real-time Alerts & Non-Repaint Signals
-							</div>
-							<div class="pricing__checkout-advantage">
-								<i class="fas fa-check-circle"></i>
-								24/7 Support & Active Product Updates
+							<div class="subscription__item-main">
+								<div class="button button--secondary button--square subscription__item-button disabled">Choose</div>
+								<div class="subscription__item-date">Subscription active</div>
+								<div class="subscription__item-list">
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>One Active SmartTrade</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>One DCA Bot</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>One Grid Bot</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>One Options Bot</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited Scalper Terminal</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-times"></i>
+										<span>Paper trading is not supported</span>
+									</div>
+								</div>
 							</div>
 						</div>
+					 
+						<div class="subscription__item">
+							<div class="subscription__item-header">
+								<div class="subscription__item-name">Started</div>
+								<div class="subscription__item-price">$29</div>
+								<div class="subscription__item-expired">with monthly payment</div>
+							 
+							</div>
+							<div class="subscription__item-main">
+								<div class="button button--secondary button--square subscription__item-button" data-bs-toggle="modal" data-bs-target="#depositModal">Choose</div>
+								<div class="subscription__item-list">
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited Active SmartTrades</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>One DCA Bot</span>
+									</div>
+								  
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>One Grid Bot</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>One Options Bot</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited Scalper Terminal</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>Paper Trading</span>
+									</div>
+								</div>    
+							</div>
+						</div>  
+						
+						<div class="subscription__item">
+							<div class="subscription__item-header">
+								<div class="subscription__item-name">Advanced</div>
+								<div class="subscription__item-price">$49</div>
+								<div class="subscription__item-expired">with monthly payment</div>
+							 
+							</div>
+							<div class="subscription__item-main">
+								<div class="button button--secondary button--square subscription__item-button" data-bs-toggle="modal" data-bs-target="#depositModal">Choose</div>
+								<div class="subscription__item-list">
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited Active SmartTrades</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited DCA Bot</span>
+									</div>
+								  
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>One Grid Bot</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>One Options Bot</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited Scalper Terminal</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>Paper Trading</span>
+									</div>
+								</div>    
+							</div>
+						</div>  
+
+						<div class="subscription__item">
+							<div class="subscription__item-header">
+								<div class="subscription__item-name">Pro</div>
+								<div class="subscription__item-price">$99</div>
+								<div class="subscription__item-expired">with monthly payment</div>
+								<div class="subscription__item-badge subscription__item-badge--red">User selection</div>
+							</div>
+							<div class="subscription__item-main">
+								<div class="button button--secondary button--square subscription__item-button" data-bs-toggle="modal" data-bs-target="#depositModal">Choose</div>
+								<div class="subscription__item-list">
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited Active SmartTrades</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited DCA Bot</span>
+									</div>
+								  
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited GRID Bots</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited Options Bots</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited Scalper Terminal</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>Paper Trading</span>
+									</div>
+								</div>    
+							</div>
+						</div>  
 					</div>
+
+					<div id="year-tab" class="subscription__tab-list" style="display: none" >
+						<div class="subscription__item">
+							<div class="subscription__item-header">
+								<div class="subscription__item-name">Free</div>
+								<div class="subscription__item-oldprice disabled">$0</div>
+								<div class="subscription__item-price">$0</div>
+								<div class="subscription__item-expired">forever</div>
+								<div class="subscription__item-badge subcription__item-badge--green">Current plan</div>
+							</div>
+							<div class="subscription__item-main">
+								<div class="button button--secondary button--square subscription__item-button disabled" data-bs-toggle="modal" data-bs-target="#depositModal">Choose</div>
+								<div class="subscription__item-date">Subscription active</div>
+								<div class="subscription__item-list">
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>One Active SmartTrade</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>One DCA Bot</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>One Grid Bot</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>One Options Bot</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited Scalper Terminal</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-times"></i>
+										<span>Paper trading is not supported</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					 
+						<div class="subscription__item">
+							<div class="subscription__item-header">
+								<div class="subscription__item-name">Started</div>
+								<div class="subscription__item-oldprice">$350</div>
+								<div class="subscription__item-price">$290</div>
+								<div class="subscription__item-expired">with yearly payment</div>
+							 
+							</div>
+							<div class="subscription__item-main">
+								<div class="button button--secondary button--square subscription__item-button" data-bs-toggle="modal" data-bs-target="#depositModal">Choose</div>
+								<div class="subscription__item-list">
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited Active SmartTrades</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>One DCA Bot</span>
+									</div>
+								  
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>One Grid Bot</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>One Options Bot</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited Scalper Terminal</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>Paper Trading</span>
+									</div>
+								</div>    
+							</div>
+						</div>  
+						
+						<div class="subscription__item">
+							<div class="subscription__item-header">
+								<div class="subscription__item-name">Advanced</div>
+								<div class="subscription__item-oldprice">$600</div>
+								<div class="subscription__item-price">$490</div>
+								<div class="subscription__item-expired">with yearly payment</div>
+							 
+							</div>
+							<div class="subscription__item-main">
+								<div class="button button--secondary button--square subscription__item-button">Choose</div>
+								<div class="subscription__item-list">
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited Active SmartTrades</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited DCA Bot</span>
+									</div>
+								  
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>One Grid Bot</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>One Options Bot</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited Scalper Terminal</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>Paper Trading</span>
+									</div>
+								</div>    
+							</div>
+						</div>  
+
+						<div class="subscription__item">
+							<div class="subscription__item-header">
+								<div class="subscription__item-name">Pro</div>
+								<div class="subscription__item-oldprice">$1200</div>
+								<div class="subscription__item-price">$999</div>
+								<div class="subscription__item-expired">with yearly payment</div>
+								<div class="subscription__item-badge subscription__item-badge--red">User selection</div>
+							</div>
+							<div class="subscription__item-main">
+								<div class="button button--secondary button--square subscription__item-button">Choose</div>
+								<div class="subscription__item-list">
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited Active SmartTrades</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited DCA Bot</span>
+									</div>
+								  
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited GRID Bots</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited Options Bots</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-infinity"></i>
+										<span>Unlimited Scalper Terminal</span>
+									</div>
+									<div class="subscription__item-text">
+										<i class="fas fa-check"></i>
+										<span>Paper Trading</span>
+									</div>
+								</div>    
+							</div>
+						</div>  
+					</div>
+				   
 				</div>
 			</div>
+			 <!-- Modal deposit -->
+			 <div class="modal fade" id="depositModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title">Depositing $174.0</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modal-deposit">
+							<div class="modal-deposit-content">
+								You are going to activate "Starter" subscription for $174.0 per year.
+							</div>
+							<div class="modal-deposit-title">
+								Your location
+							</div>
+							<div class="modal-deposit-noti">
+								Please specify your country of residence and postal code. This information is required to ensure account and payment security, and to combat fraud.
+							</div>
+						  
+							<div class="modal-deposit-title-small">
+								A payment method
+							</div>
+							<div class="modal-deposit-payment-list">
+								<div class="modal-deposit-payment-item active">
+									<i class="fab fa-bitcoin"></i>
+								</div>
+							</div>
+							<select class="modal-deposit-select form-select form-select-sm" aria-label=".form-select-sm example">
+								<option selected>Select a payment method</option>
+								<option value="BTC">BTC</option>
+								<option value="USDT">USDT</option>
+								<option value="ETH">ETH</option>
+							  </select>
+							<div class="modal-deposit-terms">
+								<input type="checkbox" name="term" id="term" class="modal-deposit-checkbox">
+								<div class="modal-deposit-policy">
+									I accept <a href="#">Terms of use</a>  and agree to payment amount and accept <a href="#">Recurring Payment Policy</a>  and <a href="#">Refund Policy</a>  
+								</div>
+							</div>
+							<div class="button button--secondary button--square modal-deposit-button" data-bs-toggle="modal" data-bs-target="#confirmModal">Pay $174.0</div>
+							<div class="modal-deposit-note">
+								Sales Tax / VAT Included
+							</div>
+						</div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+			  <!-- Modal confirm -->
+			  <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="ConfirmModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title">Subscription confirmation</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modal-confirm">
+							<div class="modal-confirm-title">
+								Address:
+							</div>
+							<div class="modal-confirm-code">
+								<div onclick="copyToClipboard('code-address')" class="modal-confirm-code-copy-address" data-bs-toggle="tooltip" title="Copy!">
+									<i class="fa-solid fa-clone"></i>
+								</div>
+								<div id="code-address" class="modal-confirm-code-address">
+									TR4B8XQei74YANZiQTRCfoR3GqBdqoAw74
+								</div>
+							</div>
+							<div class="modal-confirm-title">
+								Address available within 3 hours
+							</div>
+							<div class="modal-confirm-qrcode">
+								<img src="assets/images/qrcode.png" alt="">
+							</div>
+							<div class="modal-confirm-title">
+								Amount:
+							</div>
+							<div class="modal-confirm-code">
+								<div onclick="copyToClipboard('code-money')"  class="modal-confirm-code-copy-money" data-bs-toggle="tooltip" title="Copy!">
+									<i class="fa-solid fa-clone"></i>
+								</div>
+								<div id="code-money" class="modal-confirm-code-money">
+									173.81362
+								</div>
+								<div class="modal-confirm-code-unit">
+									USDT.TRC20 + <span>FEE!</span>
+								</div>
+							</div>
+							<div class="modal-confirm-note">
+								Sales Tax / VAT Included
+							</div>
+							<div class="modal-confirm-noti">
+								Please add a commission for transfer or withdrawal from the exchange
+							</div>
+							<div class="button button--secondary button--square modal-confirm-button">I did the payment</div>
+							<div class="modal-deposit-note">
+								After you make payment, you can watch status of this payment here: 
+							</div>
+							<a href="#" class="modal-deposit-status-link">STATUS LINK</a> 
+						</div>
+					</div>
+				  </div>
+				</div>
+			  </div>
 		</section>
 		
 		<footer class="footer">

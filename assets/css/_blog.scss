@@ -1,0 +1,106 @@
+.blog {
+	&__header {
+		padding-top: 10rem;
+		padding-bottom: 3rem;
+		background: rgb(0, 175, 238);
+		background: linear-gradient(
+			90deg,
+			rgba(0, 175, 238, 1) 0%,
+			rgba(112, 176, 218, 1) 51%,
+			rgba(208, 205, 224, 1) 100%
+		);
+		color: $white-color;
+	}
+
+	&__header-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__header-left {
+		flex: 1;
+	}
+
+	&__header-title {
+		font-size: 5rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	&__header-subtitle {
+		font-size: 2rem;
+		font-weight: 400;
+		margin-bottom: 1rem;
+	}
+
+	&__header-number {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		div {
+			font-size: 2rem;
+		}
+	}
+
+	&__body {
+		height: 100rem;
+		color: $black-color;
+		padding-top: 5rem;
+	}
+
+	&__body-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__body-articles {
+		flex: 1;
+	}
+
+	&__body-tags {
+		width: 31rem;
+
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__body-tag {
+		padding: 2rem;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-radius: 0.5rem;
+		background: rgb(0, 175, 238);
+		background: linear-gradient(
+			90deg,
+			rgba(0, 175, 238, 1) 0%,
+			rgba(112, 176, 218, 1) 51%,
+			rgba(208, 205, 224, 1) 100%
+		);
+		margin-bottom: 2rem;
+		font-size: 2rem;
+		line-height: 3;
+
+		&-title {
+			color: $white-color;
+		}
+
+		&-number {
+			border-radius: 50%;
+			background-color: $white-color;
+			width: 4.5rem;
+			height: 4.5rem;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
