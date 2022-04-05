@@ -3,3 +3,7 @@ sass assets/css/style.scss assets/css/style.css --watch
 <i class="fas fa-infinity"></i>
 <i class="fas fa-check"></i>
 <i class="fas fa-times"></i>
+
+box-shadow: inset 0 -50px 8px -4px #000;
+
+
