@@ -202,7 +202,6 @@
 
 .blog-post {
 	padding-top: 10rem;
-	padding-bottom: 3rem;
 	color: $black-color;
 
 	display: flex;
@@ -438,6 +437,109 @@
 		font-size: 1.5rem;
 		font-weight: 700;
 	}
+
+	&__footer {
+		background: #f8f8f8;
+	}
+
+	&__footer-title {
+		font-size: 1.8rem;
+		font-weight: 700;
+		margin-top: 5rem;
+		margin-bottom: 3rem;
+		text-transform: uppercase;
+		text-align: center;
+
+		&:before {
+			left: 0;
+			content: '—';
+			font-size: inherit;
+			width: 13px;
+			min-width: 1.2em;
+			align-self: flex-start;
+		}
+
+		&:after {
+			right: 0;
+			content: '—';
+			font-size: inherit;
+			width: 13px;
+			min-width: 1.2em;
+			align-self: flex-end;
+		}
+	}
+
+	&__footer-list {
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
+		margin-bottom: 3rem;
+		flex-wrap: wrap;
+	}
+
+	&__footer-item {
+		width: calc(33.33% - 2rem);
+		margin-bottom: 2rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__footer-image {
+		overflow: hidden;
+		cursor: pointer;
+		margin-bottom: 1rem;
+
+		img {
+			height: 100%;
+			object-fit: cover;
+			transition: all 0.2s ease-in-out;
+
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	&__footer-text {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__footer-text-info {
+		font-size: 1.4rem;
+		margin-bottom: 1.5rem;
+
+		display: flex;
+
+		span:nth-child(2) {
+			margin: 0 1rem;
+		}
+	}
+
+	&__footer-text-tag {
+		font-weight: bold;
+	}
+
+	&__footer-text-date {
+		color: #888;
+	}
+
+	&__footer-text-title {
+		font-size: 2.6rem;
+		font-weight: 700;
+		margin-bottom: 2rem;
+		color: $black-color;
+
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-webkit-line-clamp: 2;
+
+		&:hover {
+			color: $black-color;
+		}
+	}
 }
 
 // click button scrool top
@@ -471,6 +573,14 @@
 	.blog__body-tags {
 		display: none;
 	}
+
+	.blog-post__sidebar {
+		display: none;
+	}
+
+	.blog-post__footer-item {
+		width: calc(50% - 2rem);
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -500,5 +610,22 @@
 
 	.blog__body-text {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.blog-post__footer-item {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.blog-post__article-prev-next {
+		flex-direction: column;
+	}
+
+	.blog-post__article-prev-next-item {
+		width: 100%;
+		margin-bottom: 2rem;
 	}
 }
