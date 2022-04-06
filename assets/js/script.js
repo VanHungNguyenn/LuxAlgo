@@ -221,3 +221,22 @@ $(document).ready(function () {
 		ordering: false,
 	})
 })
+
+// Scroll top top
+const scrollTop = document.querySelector('.scroll-top')
+
+window.addEventListener('scroll', () => {
+	if (window.pageYOffset > 300) {
+		scrollTop.style.display = 'flex'
+	} else {
+		scrollTop.style.display = 'none'
+	}
+})
+
+// click scrollTop on scrollTop
+scrollTop.addEventListener('click', () => {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth',
+	})
+})

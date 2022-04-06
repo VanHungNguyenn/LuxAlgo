@@ -331,17 +331,6 @@ th {
   border: 1px solid;
   border-radius: 0.8rem;
 }
-.header__language {
-  padding: 1rem 1rem;
-  margin: 0 0.6rem;
-  cursor: pointer;
-  border-radius: 0.8rem;
-  font-size: 3rem;
-  color: #0c0c0c;
-}
-.header__language:hover {
-  background-color: #00a59a;
-}
 .header__bars, .header__close {
   display: none;
   cursor: pointer;
@@ -1035,7 +1024,7 @@ th {
 }
 .pricing {
   padding-top: 8rem;
-  padding-bottom: 10rem;
+  padding-bottom: 6rem;
   background-color: #d0cde0;
   color: #0c0c0c;
 }
@@ -2177,6 +2166,26 @@ th {
   font-weight: 700;
 }
 
+.scroll-top {
+  position: fixed;
+  right: 0;
+  bottom: calc(50% - 5rem);
+  width: 5rem;
+  height: 5rem;
+  background-color: #898989;
+  color: white;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.scroll-top:hover {
+  opacity: 0.7;
+}
+
 @media screen and (max-width: 991px) {
   .blog__body-tags {
     display: none;
@@ -2842,6 +2851,29 @@ th {
 }
 .subscription__item-text i.fa-times {
   color: #ee7d8b;
+}
+.subscription__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.subscription__footer-text {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.subscription__footer-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscription__footer-logo {
+  height: 4rem;
+  margin: 0 1rem;
+}
+.subscription__footer-logo img {
+  height: 100%;
 }
 
 .modal-deposit {
