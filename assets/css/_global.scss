@@ -282,6 +282,7 @@ th {
 	color: $black-color;
 	font-size: 1.6rem;
 	position: relative;
+	// margin-left: auto;
 
 	&__select {
 		width: 100%;
@@ -348,6 +349,10 @@ th {
 
 	.feature {
 		width: 90%;
+	}
+
+	.dropdown-language {
+		margin-left: auto;
 	}
 }
 

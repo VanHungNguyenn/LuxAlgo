@@ -288,6 +288,10 @@ th {
   .feature {
     width: 90%;
   }
+
+  .dropdown-language {
+    margin-left: auto;
+  }
 }
 @media screen and (max-width: 991px) {
   html {
@@ -380,9 +384,6 @@ th {
 }
 .header__menu-link:hover {
   opacity: 0.6;
-}
-.header__language {
-  margin-right: 1.6rem;
 }
 .header__button {
   padding: 1rem 2rem;
