@@ -244,3 +244,30 @@ if (scrollTop) {
 		})
 	})
 }
+
+// dropdown language
+var dropdownLanguage = document.querySelector('.dropdown-language')
+var dropdownLanguageSelect = document.querySelector(
+	'.dropdown-language__select'
+)
+var dropdownLanguageList = document.querySelector('.dropdown-language__list')
+var dropdownLanguageValue = document.querySelector('.dropdown-language__value')
+var dropdownLanguageItem = document.querySelectorAll('.dropdown-language__item')
+
+dropdownLanguageSelect.addEventListener('click', function () {
+	dropdownLanguageList.classList.toggle('dropdown-language__list--active')
+})
+
+dropdownLanguageItem.forEach(function (item) {
+	item.addEventListener('click', function () {
+		dropdownLanguageValue.innerHTML = this.innerHTML
+		dropdownLanguageList.classList.remove('dropdown-language__list--active')
+	})
+})
+
+// click outside, dropdown-language__list will be hidden
+document.addEventListener('click', function (e) {
+	if (!dropdownLanguage.contains(e.target)) {
+		dropdownLanguageList.classList.remove('dropdown-language__list--active')
+	}
+})

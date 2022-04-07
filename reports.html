@@ -78,8 +78,32 @@
 						<i class="fas fa-times" ></i>
 					</div>
 				</div>
-				<div class="header__language">
-					<i class="fa-solid fa-globe"></i>
+				<div class="dropdown-language">
+					<div class="dropdown-language__select">
+						<div class="dropdown-language__value">
+							<img src="assets/images/flags/vn.svg" alt="flag vn" />
+							<span>Vietnam</span>
+						</div>
+						<i class="fa-solid fa-angle-down"></i>
+					</div>
+					<div class="dropdown-language__list">
+						<div class="dropdown-language__item">
+							<img src="assets/images/flags/vn.svg" alt="flag vn" />
+							<span>Vietnam</span>
+						</div>
+						<div class="dropdown-language__item">
+							<img src="assets/images/flags/gb.svg" alt="flag en" />
+							<span>English</span>
+						</div>
+						<div class="dropdown-language__item">
+							<img src="assets/images/flags/cn.svg" alt="flag cn" />
+							<span>China</span>
+						</div>
+						<div class="dropdown-language__item">
+							<img src="assets/images/flags/ru.svg" alt="flag ru" />
+							<span>Russia</span>
+						</div>
+					</div>
 				</div>
 				<div class="header__bars" onclick="showMenu()">
 					<i class="fas fa-bars" ></i>
@@ -96,10 +120,20 @@
                             11700%
                         </div>
                         <div class="reports__header-item-signals">
-                            <!-- font awasome -->
-                            <i class="fas fa-signal"></i>
-                            <span>779 signals</span>
+							<div class="reports__header-item-signal">
+								<i class="fa-solid fa-angle-up"></i>
+								<span>33.3% more than lastweek</span>
+							</div>
+							<div class="reports__header-item-signal">
+								<i class="fa-solid fa-user"></i>
+								<span>45.5% new visitors</span>
+							</div>
+							<div class="reports__header-item-signal">
+								<i class="fa-solid fa-circle-xmark"></i>
+								<span>3.25% bounce rate</span>
+							</div>
                         </div>
+
                     </div>
                     <div class="reports__header-item">
                         <div class="reports__header-item-title">
@@ -108,10 +142,19 @@
                         <div class="reports__header-item-value">
                             11000%
                         </div>
-                        <div class="reports__header-item-signals">
-                            <!-- font awasome -->
-                            <i class="fas fa-chart-line"></i>
-                            <span>700 signals</span>
+						<div class="reports__header-item-signals">
+							<div class="reports__header-item-signal">
+								<i class="fa-solid fa-angle-up"></i>
+								<span>20.4% more than lastweek</span>
+							</div>
+							<div class="reports__header-item-signal">
+								<i class="fa-solid fa-bag-shopping"></i>
+								<span>33.5% new orders</span>
+							</div>
+							<div class="reports__header-item-signal">
+								<i class="fa-solid fa-dollar-sign"></i>
+								<span>6.21% conversion rate</span>
+							</div>
                         </div>
                     </div>
                     <div class="reports__header-item">
@@ -121,10 +164,19 @@
                         <div class="reports__header-item-value">
                             700%
                         </div>
-                        <div class="reports__header-item-signals">
-                            <!-- font awasome -->
-                            <i class="fas fa-chart-line"></i>
-                            <span>79 signals</span>
+						<div class="reports__header-item-signals">
+							<div class="reports__header-item-signal">
+								<i class="fa-solid fa-angle-up"></i>
+								<span>59.5% more than lastweek</span>
+							</div>
+							<div class="reports__header-item-signal">
+								<i class="fa-brands fa-facebook-f"></i>
+								<span>45.5% from facebook</span>
+							</div>
+							<div class="reports__header-item-signal">
+								<i class="fa-brands fa-youtube"></i>
+								<span>15.25% from youtube</span>
+							</div>
                         </div>
                     </div>
                    
@@ -136,9 +188,18 @@
                             80%
                         </div>
                         <div class="reports__header-item-signals">
-                            <!-- font awasome -->
-                            <i class="fas fa-percent"></i>
-                            <span>700/779 signals</span>
+							<div class="reports__header-item-signal">
+								<i class="fa-solid fa-angle-up"></i>
+								<span>5.3% more than lastweek</span>
+							</div>
+							<div class="reports__header-item-signal">
+								<i class="fa-solid fa-credit-card"></i>
+								<span>10.5% from total usage</span>
+							</div>
+							<div class="reports__header-item-signal">
+								<i class="fa-solid fa-hand"></i>
+								<span>2MB per visit</span>
+							</div>
                         </div>
                     </div>
                 </div>
@@ -146,15 +207,10 @@
             <div class="reports__body">
                 <div class="reports__body-chart">
                     <canvas id="tradesChart"></canvas>
-                </div>
-                <!-- <div class="reports__body-conclusion">
-                    <div class="reports__body-conclusion-title">
-                        TOTAL:
-                    </div> -->
-                    <div class="reports__body-chart-doughnut" style="width:250px; height: auto">
+                </div>    
+                    <div class="reports__body-chart-doughnut">
                         <canvas id="doughnutChart" ></canvas>
                     </div>
-                <!-- </div> -->
             </div>
 
         </section>
@@ -234,7 +290,7 @@
 				</div>
 			</div>
 		</section>
-				<div class="chat">
+		<div class="chat">
 			<div class="telegram">
 				<a href="https://t.me/SYSTradingSignals">
 					<img src="./assets/images/telegram.png" alt="telegram">
@@ -244,6 +300,8 @@
 				</div>
 			</div>
 		</div>
+	
+		
 
 		<!-- javascript -->
         <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>

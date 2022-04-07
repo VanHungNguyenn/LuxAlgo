@@ -17,8 +17,8 @@
 	&__header-item {
 		width: calc(25% - 1rem);
 		border-radius: 0.5rem;
-		padding: 2rem;
-		font-size: 1.8rem;
+		padding: 1.5rem;
+		font-size: 1.4rem;
 		background-color: #ebfdee;
 		margin-bottom: 2rem;
 
@@ -36,26 +36,33 @@
 	}
 
 	&__header-item-title {
-		font-size: 2.2rem;
+		font-size: 1.8rem;
 		font-weight: 500;
 		text-transform: uppercase;
-		margin-bottom: 2rem;
+		margin-bottom: 1.5rem;
 	}
 
 	&__header-item-value {
-		font-size: 2.8rem;
+		font-size: 2.2rem;
 		font-weight: 700;
 		text-transform: uppercase;
-		margin-bottom: 2rem;
+		margin-bottom: 1.5rem;
 	}
 
 	&__header-item-signals {
 		display: flex;
+		flex-direction: column;
+	}
+
+	&__header-item-signal {
+		display: flex;
 		align-items: center;
-		font-style: italic;
+		margin-bottom: 0.5rem;
 
 		i {
+			width: 1.5rem;
 			margin-right: 1rem;
+			text-align: center;
 		}
 	}
 
@@ -66,7 +73,7 @@
 	&__body-chart-doughnut {
 		margin-bottom: 3rem;
 
-		width: fit-content;
+		width: 230px;
 
 		border-radius: 0.5rem;
 		border: 1px solid #ccc;
@@ -79,5 +86,11 @@
 @media screen and (max-width: 991px) {
 	.reports__header-item {
 		width: calc(50% - 1rem);
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.reports__header-item {
+		width: 100%;
 	}
 }
