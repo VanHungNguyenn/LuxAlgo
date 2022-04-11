@@ -2427,6 +2427,12 @@ th {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reports__header-item-value img {
+  width: 7rem;
 }
 .reports__header-item-signals {
   display: flex;

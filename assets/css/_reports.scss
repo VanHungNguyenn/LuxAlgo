@@ -47,6 +47,14 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		margin-bottom: 1.5rem;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		img {
+			width: 7rem;
+		}
 	}
 
 	&__header-item-signals {
