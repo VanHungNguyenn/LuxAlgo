@@ -129,3 +129,4 @@ function Validator(formSelector) {
 
 Validator('#login-form')
 Validator('#register-form')
+Validator('#forgot-form')
