@@ -3691,6 +3691,45 @@ td {
 @media screen and (max-width: 479px) {
   /* start of phone styles */
 }
+.review-signal {
+  display: flex;
+  align-items: space-between;
+}
+.review-signal__left {
+  width: 25rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  padding: 1rem;
+}
+.review-signal__right {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+.review-signal__right__header {
+  padding: 1rem;
+  border-bottom: 2px solid #ebebeb;
+}
+.review-signal__right__header-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.review-signal__right__header-item {
+  font-size: 1.3rem;
+}
+.review-signal__right__header-item-title {
+  margin-bottom: 1rem;
+}
+.review-signal__right__header-item-value {
+  font-weight: 600;
+}
+.review-signal__right__chart {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
 @media screen and (max-width: 991px) {
   /* start of large tablet styles */
 }

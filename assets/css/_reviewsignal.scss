@@ -1,0 +1,46 @@
+.review-signal {
+	display: flex;
+	align-items: space-between;
+
+	&__left {
+		width: 25rem;
+		background-color: #fff;
+		border-radius: 0.5rem;
+		margin-right: 1rem;
+		padding: 1rem;
+	}
+
+	&__right {
+		flex: 1;
+		background-color: #fff;
+		border-radius: 0.5rem;
+	}
+
+	&__right__header {
+		padding: 1rem;
+		border-bottom: 2px solid #ebebeb;
+	}
+
+	&__right__header-list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__right__header-item {
+		font-size: 1.3rem;
+	}
+
+	&__right__header-item-title {
+		margin-bottom: 1rem;
+	}
+
+	&__right__header-item-value {
+		font-weight: 600;
+	}
+
+	&__right__chart {
+		padding: 1rem;
+		margin-top: 1rem;
+	}
+}
